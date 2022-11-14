@@ -1,0 +1,29 @@
+{
+  "name": "vue-vite-pinia",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "npm run build && vite preview --port 4173",
+    "lint": "eslint --ext .js,.vue --config=.eslintrc.js src vite.config.js .eslintrc.js",
+    "fix": "eslint --fix --ext .js,.vue --config=.eslintrc.js src vite.config.js .eslintrc.js"
+  },
+  "dependencies": {
+    "pinia": "^2.0.21",
+    "vue": "^3.2.38"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "eslint": "^8.11.0",
+    "eslint-config-tjw-base": "^2.0.0",
+    "eslint-config-tjw-import": "^1.0.0",
+    "eslint-config-tjw-vue": "^2.1.0",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-vue": "^8.5.0",
+    "eslint-plugin-vuejs-accessibility": "^1.2.0",
+    "vite": "^3.0.9"
+  }
+}
