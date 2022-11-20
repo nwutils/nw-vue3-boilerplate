@@ -1,65 +1,67 @@
 <template>
   <WelcomeItem>
     <template #heading>Documentation</template>
-
-    Vue's <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
+    <template #default>
+      Vue's
+      <ExternalLink name="official documentation" url="vuejs.org" />
+      provides you with all information you need to get started.
+    </template>
   </WelcomeItem>
 
   <WelcomeItem>
     <template #heading>Tooling</template>
-
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>.
-    The recommended IDE setup is
-    <a href="https://www.sublimetext.com" target="_blank" rel="noopener">Sublime Text</a> +
-    <a href="https://packagecontrol.io/packages/Vue%20Syntax%20Highlight" target="_blank" rel="noopener">Vue Syntax Highlighting</a>.
-    If you need to test your components and web pages, check out
-    <a href="https://jestjs.io" target="_blank" rel="noopener">Jest</a>,
-    <a href="https://test-utils.vuejs.org" target="_blank" rel="noopener">Vue Test-Utils</a>, and
-    <a href="https://github.com/tjw-lint/jest-serializer-vue-tjw" target="_blank">jest-serializer-vue-tjw</a>.
+    <template #default>
+      This project is served and bundled with
+      <ExternalLink name="Vite" url="vitejs.dev/guide/features.html" />.
+      The recommended IDE setup is
+      <ExternalLink name="Sublime Text" url="www.sublimetext.com" /> +
+      <ExternalLink name="Vue Syntax Highlighting" url="packagecontrol.io/packages/Vue%20Syntax%20Highlight" />.
+      If you need to test your components and web pages, check out
+      <ExternalLink name="Jest" url="jestjs.io" />,
+      <ExternalLink name="Vue Test-Utils" url="test-utils.vuejs.org" />, and
+      <ExternalLink name="jest-serializer-vue-tjw" url="github.com/tjw-lint/jest-serializer-vue-tjw" />.
+    </template>
   </WelcomeItem>
 
   <WelcomeItem>
     <template #heading>Ecosystem</template>
-
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>.
-    If you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a> and
-    <a href="https://github.com/vuesomedev/awesome-vue-3" target="_blank" rel="noopener">Awesome Vue 3</a>
-    a visit.
+    <template #default>
+      Get official tools and libraries for your project:
+      <ExternalLink name="Pinia" url="pinia.vuejs.org" />,
+      <ExternalLink name="Vue Router" url="router.vuejs.org" />,
+      <ExternalLink name="Vue Test Utils" url="test-utils.vuejs.org" />, and
+      <ExternalLink name="Vue Dev Tools" url="github.com/vuejs/devtools" />.
+      If you need more resources, we suggest paying
+      <ExternalLink name="Awesome Vue" url="github.com/vuejs/awesome-vue" /> and
+      <ExternalLink name="Awesome Vue 3" url="github.com/vuesomedev/awesome-vue-3" />,
+      a visit.
+    </template>
   </WelcomeItem>
 
   <WelcomeItem>
     <template #heading>Community</template>
-
-    Stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>,
-    our official Discord server, or
-    <a
-      v-text="'StackOverflow'"
-      href="https://stackoverflow.com/questions/tagged/vue.js"
-      target="_blank"
-      rel="noopener"
-    ></a>.
-    You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a>
-    and follow the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    twitter account for latest news in the Vue world.
+    <template #default>
+      Stuck? Ask your question on
+      <ExternalLink name="Vue Land" url="chat.vuejs.org" />,
+      our official Discord server, or
+      <ExternalLink name="StackOverflow" url="stackoverflow.com/questions/tagged/vue.js" />.
+      You should also subscribe to
+      <ExternalLink name="our mailing list" url="news.vuejs.org" />
+      and follow the official
+      <ExternalLink name="@vuejs" url="twitter.com/vuejs" />
+      twitter account for latest news in the Vue world.
+    </template>
   </WelcomeItem>
 </template>
 
 <script>
+import ExternalLink from '@/components/ExternalLink.vue';
 import WelcomeItem from '@/components/WelcomeItem.vue';
 
 export default {
   name: 'TheWelcome',
   components: {
+    ExternalLink,
     WelcomeItem
   }
 };

@@ -3,17 +3,23 @@
     <h1 class="green">{{ message }}</h1>
     <h3>
       This boilerplate uses
-      <a href="https://vitejs.dev" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org" target="_blank" rel="noopener">Vue 3</a> +
-      <a href="https://pinia.vuejs.org" target="_blank" rel="noopener">Pinia</a> +
-      the <a href="https://docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing" target="_blank" rel="noopener">superior Options API</a>.
+      <ExternalLink name="NW.js" url="nwjs.io" /> +
+      <ExternalLink name="Vite" url="vitejs.dev" /> +
+      <ExternalLink name="Vue 3" url="vuejs.org" /> +
+      <ExternalLink name="Pinia" url="pinia.vuejs.org" /> +
+      the <ExternalLink name="superior Options API" url="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing" />.
     </h3>
   </div>
 </template>
 
 <script>
+import ExternalLink from '@/components/ExternalLink.vue';
+
 export default {
   name: 'HelloWorld',
+  components: {
+    ExternalLink
+  },
   props: {
     message: {
       type: String,
