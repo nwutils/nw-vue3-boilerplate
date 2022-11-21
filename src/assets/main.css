@@ -20,6 +20,12 @@ button {
   border-radius: 3px;
   padding: 4px 6px;
 }
+button:hover {
+  background: hsla(160, 100%, 40%, 1);
+}
+button:active {
+  background: hsla(160, 100%, 43%, 1);
+}
 
 strong {
   font-weight: bold;
@@ -29,6 +35,25 @@ hr {
   width: 100%;
   background: var(--color-text);
   margin: 15px 0px;
+}
+
+.container {
+  display: inline-block;
+  min-width: 200px;
+  margin-right: 2rem;
+  vertical-align: top;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.center {
+  text-align: center;
 }
 
 @media (hover: hover) {

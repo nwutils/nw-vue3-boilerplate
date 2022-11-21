@@ -1,6 +1,6 @@
 // Make NW.js and Node globals available in Vue
 export default function applyPrototypes (component) {
-  component.isDesktop = !!window.nw;
+  component.isDesktop = Boolean(window.nw);
   if (window.nw) {
     component.nw = window.nw;
     component.process = window.nw.process;

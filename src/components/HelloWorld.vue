@@ -9,6 +9,22 @@
       <ExternalLink name="Pinia" url="pinia.vuejs.org" /> +
       the <ExternalLink name="superior Options API" url="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing" />.
     </h3>
+    <div v-if="isDesktop" class="center mt-1">
+      <p class="container">
+        <button @click="nw.Window.get().showDevTools()">
+          Open Vue-DevTools
+        </button>
+      </p>
+      <p class="container">
+        <button @click="openAppInBrowser">
+          Open App in default browser
+        </button>
+      </p>
+    </div>
+    <p v-else>
+      Notice that the <strong>same app conditionally renders</strong> different content
+      in a normal browser than <strong>when ran as a desktop app</strong>.
+    </p>
   </div>
 </template>
 
@@ -24,6 +40,13 @@ export default {
     message: {
       type: String,
       required: true
+    }
+  },
+  methods: {
+    openAppInBrowser: function () {
+      if (this.isDesktop) {
+        this.nw.Shell.openExternal(window.location.href);
+      }
     }
   }
 };

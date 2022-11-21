@@ -9,9 +9,15 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'ResourceGroup'
+};
+</script>
+
 <style scoped>
 .item {
-  display: flex;
+  display: inline-flex;
   margin-top: 2rem;
 }
 

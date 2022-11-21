@@ -2,72 +2,53 @@
   <header>
     <div class="logos">
       <img
-        alt="Vue logo"
-        src="./assets/logo.svg"
-      />
-      <img
         v-if="isDesktop"
         alt="NW.js logo"
         src="./assets/nw.png"
+      />
+      <img
+        alt="Vue logo"
+        src="./assets/logo.svg"
       />
     </div>
 
     <div class="wrapper">
       <HelloWorld :message="message" />
-
       <hr />
-
-      <div>
-        <h2 class="green">🍍 Pinia Example:</h2>
-
-        <ul>
-          <li><strong>Count:</strong> {{ count }}</li>
-          <li><strong>Doubled Count:</strong> {{ doubledCount }}</li>
-          <li><button @click="counterStore.incrementCount">Increment Count</button></li>
-        </ul>
+      <div class="flex">
+        <PiniaDemo />
+        <FsExample />
       </div>
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <ResourceLinks />
   </main>
 </template>
 
 <script>
-import {
-  mapGetters,
-  mapState
-} from 'pinia';
-
-import { counterStore } from '@/stores/counter.js';
-
+import FsExample from '@/components/FsExample.vue';
 import HelloWorld from '@/components/HelloWorld.vue';
-import TheWelcome from '@/components/TheWelcome.vue';
+import PiniaDemo from '@/components/PiniaDemo.vue';
+import ResourceLinks from '@/components/ResourceLinks.vue';
 
 export default {
   name: 'App',
   components: {
+    FsExample,
     HelloWorld,
-    TheWelcome
+    PiniaDemo,
+    ResourceLinks
   },
   computed: {
     message: function () {
-      let message = 'Vite, Vue 3, Pinia, Options API';
+      let message = 'Vue';
       if (this.isDesktop) {
-        message = 'NW.js, ' + message;
+        message = 'NW.js & ' + message;
       }
       return message;
-    },
-    counterStore: function () {
-      return counterStore();
-    },
-    ...mapState(counterStore, [
-      'count'
-    ]),
-    ...mapGetters(counterStore, [
-      'doubledCount'
-    ])
+    }
   }
 };
 </script>
