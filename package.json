@@ -10,7 +10,8 @@
     "postbuild": "node ./scripts/post-build.js",
     "preview": "npm run build && vite preview --port 4173",
     "lint": "eslint --ext .js,.vue --config=.eslintrc.js src vite.config.js .eslintrc.js",
-    "fix": "eslint --fix --ext .js,.vue --config=.eslintrc.js src vite.config.js .eslintrc.js"
+    "fix": "eslint --fix --ext .js,.vue --config=.eslintrc.js src vite.config.js .eslintrc.js",
+    "update:vue-devtools": "rimraf ./node_modules/nw-vue-devtools-prebuilt && npm install"
   },
   "window": {
     "width": 960,
@@ -24,22 +25,23 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
-    "@vitejs/plugin-vue": "^3.0.3",
-    "concurrently": "^7.5.0",
-    "eslint": "^8.11.0",
+    "@babel/eslint-parser": "^7.19.1",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "concurrently": "^7.6.0",
+    "eslint": "^8.28.0",
     "eslint-config-tjw-base": "^2.0.0",
     "eslint-config-tjw-import": "^1.0.0",
     "eslint-config-tjw-vue": "^2.1.0",
     "eslint-import-resolver-webpack": "^0.13.2",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-vue": "^8.5.0",
     "eslint-plugin-vuejs-accessibility": "^1.2.0",
     "nw": "0.64.0-sdk",
     "nw-builder": "^4.0.0-rc.8",
     "nw-vue-devtools-prebuilt": "^0.0.10",
-    "pinia": "^2.0.21",
-    "vite": "^3.0.9",
+    "pinia": "^2.0.25",
+    "rimraf": "^3.0.2",
+    "vite": "^3.2.4",
     "vue": "^3.2.45",
     "wait-on": "^6.0.1"
   }
