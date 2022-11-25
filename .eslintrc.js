@@ -15,7 +15,8 @@ module.exports = {
     Pinia: true,
     VueRouter: true,
     store: true,
-    router: true
+    router: true,
+    vi: true
   },
   plugins: [
     'vue',

@@ -1,0 +1,5 @@
+// Vitest Snapshot v1
+
+exports[`ExternalLink.vue > Desktop > Render default contents 1`] = `<a href="#" title="example.com">Test</a>`;
+
+exports[`ExternalLink.vue > Web > Render default contents 1`] = `<a href="#" title="example.com">Test</a>`;

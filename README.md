@@ -27,6 +27,11 @@ This boilerplate is still in progress and not ready for production use yet (wait
   * A11Y Linting
   * Jest Linting
   * Import Linting
+* **Vitest** - Vite-based Unit/integration/behavioral testing
+  * @vue/test-utils - Test helpers for interacting with Vue in tests
+  * jest-serializer-vue-tjw - Dramatically improved snapshot formatting
+  * @pinia/testing - Initialize Pinia in tests
+
 
 ## Documentation
 
@@ -80,6 +85,12 @@ Uses rules in `./eslint.json`
 1. `npm run fix` to auto-fix linting errors where possible
 
 
+## Tests
+
+1. `npm t` runs all unit tests and shows coverage output
+1. `npm t -- -u` runs all unit tests, updating snapshots (use with care)
+
+
 ## Build
 
 1. `npm run build` to build the app for distribution
@@ -92,18 +103,20 @@ I set up Pinia in this project to save you time (and because it's amazing). If y
 
 * Delete the `/src/store` folder and its contents
 * Delete `/src/components/PiniaDemo.vue`
-* Remove the 3 lines of code from `src/App.vue` that contain the text "PiniaDemo"
-* Remove the line of code from `/package.json` that says "pinia"
-* `npm install && git add -A && git commit -m "Removed Pinia"`
+* Delete `/tests/unit/components/PiniaDemo.test.js`
+* Remove the lines of code from `/src/App.vue` that contain the text "PiniaDemo"
+* Remove the lines of code from `/package.json` that say "pinia"
+* Remove the lines of code from `/tests/unit/setup.js` that say "pinia"
+* `npm install && npm t -- -u && git add -A && git commit -m "Removed Pinia"`
 
 
 ## Updating Vue-DevTools
 
-When you first run `npm install`, you will get the latest stable Vue-DevTools. However, future `npm installs` will not update them.
+When you first run `npm install`, you will get the latest stable Vue-DevTools. However, future `npm install`s will not re-download the latest Vue-DevTools.
 
 To update your version of Vue-DevTools run `npm run update:vue-devtools`.
 
-This will download the latest version of Vue-DevTools and apply tweaks for it to work in NW.js.
+This will delete the existing version and download the latest version of Vue-DevTools, then apply tweaks for it to work in NW.js.
 
 
 ## Alternatives

@@ -7,6 +7,9 @@ export const counterStore = defineStore('counter', {
     };
   },
   actions: {
+    resetState: function () {
+      this.count = 2;
+    },
     incrementCount: function () {
       this.count = this.count + 1;
     }

@@ -1,0 +1,193 @@
+// Vitest Snapshot v1
+
+exports[`App.vue > Desktop > Render default contents 1`] = `
+<header>
+  <div class="logos">
+    <img alt="NW.js logo" src="/src/assets/nw.png">
+    <img alt="Vue logo" src="/src/assets/logo.svg">
+  </div>
+  <div class="wrapper">
+    <div class="greetings">
+      <h1 class="green">NW.js &amp; Vue</h1>
+      <h3> This boilerplate uses <a href="#" title="nwjs.io">NW.js</a> + <a href="#" title="vitejs.dev">Vite</a> + <a href="#" title="vuejs.org">Vue 3</a> + <a href="#" title="pinia.vuejs.org">Pinia</a> + the <a href="#" title="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing">superior Options API</a>. </h3>
+      <div class="center mt-1">
+        <p class="container">
+          <button> Open Vue-DevTools </button>
+        </p>
+        <p class="container">
+          <button> Open App in default browser </button>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="flex">
+      <div class="container mb-2">
+        <h2 class="green">🍍 Pinia Example:</h2>
+        <ul>
+          <li>
+            <strong>Count:</strong> 2
+          </li>
+          <li>
+            <strong>Doubled Count:</strong> 4
+          </li>
+          <li>
+            <button> Increment Count </button>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <h2 class="green">📁 File System Example:</h2>
+        <!--v-if-->
+        <button> Click for File System example </button>
+        <!--v-if-->
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="item">
+    <div class="details">
+      <h3>Documentation</h3>
+      <a href="#" title="vuejs.org">Vue</a>, <a href="#" title="nwjs.io">NW.js</a>, <a href="#" title="pinia.vuejs.org">Pinia</a>, <a href="#" title="vitejs.dev/guide/features.html">Vite</a>, <a href="#" title="router.vuejs.org">Vue Router</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="details">
+      <h3>Tooling</h3>
+      <ul>
+        <li>
+          <a href="#" title="github.com/vuejs/devtools">Vue Dev Tools</a> (built in)
+        </li>
+        <li>
+          <a href="#" title="www.sublimetext.com">Sublime Text</a> + <a href="#" title="packagecontrol.io/packages/Vue%20Syntax%20Highlight">Vue Syntax Highlighting</a>
+        </li>
+        <li>
+          <a href="#" title="vitest.dev">Vitest</a> + <a href="#" title="test-utils.vuejs.org">Vue Test-Utils</a> + <a href="#" title="github.com/tjw-lint/jest-serializer-vue-tjw">jest-serializer-vue-tjw</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="details">
+      <h3>Resources:</h3>
+      <ul>
+        <li>
+          <a href="#" title="nwutils.io">NW Utils</a>
+        </li>
+        <li>
+          <a href="#" title="github.com/vuejs/awesome-vue">Awesome Vue</a>
+        </li>
+        <li>
+          <a href="#" title="github.com/vuesomedev/awesome-vue-3">Awesome Vue 3</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="details">
+      <h3>Community</h3>
+      <ul>
+        <li>
+          <a href="#" title="chat.vuejs.org">Vue Discord Chat</a>
+        </li>
+        <li>
+          <a href="#" title="discord.gg/tyx267vKRH">NW.js Discord Chat</a>
+        </li>
+        <li>
+          <a href="#" title="discord.gg/tyx267vKRH">NW.js Gitter Chat</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+`;
+
+exports[`App.vue > Web > Render default contents 1`] = `
+<header>
+  <div class="logos">
+    <!--v-if-->
+    <img alt="Vue logo" src="/src/assets/logo.svg">
+  </div>
+  <div class="wrapper">
+    <div class="greetings">
+      <h1 class="green">Vue</h1>
+      <h3> This boilerplate uses <a href="#" title="nwjs.io">NW.js</a> + <a href="#" title="vitejs.dev">Vite</a> + <a href="#" title="vuejs.org">Vue 3</a> + <a href="#" title="pinia.vuejs.org">Pinia</a> + the <a href="#" title="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing">superior Options API</a>. </h3>
+      <p> Notice that the <strong>same app conditionally renders</strong> different content in a normal browser than <strong>when ran as a desktop app</strong>. </p>
+    </div>
+    <hr>
+    <div class="flex">
+      <div class="container mb-2">
+        <h2 class="green">🍍 Pinia Example:</h2>
+        <ul>
+          <li>
+            <strong>Count:</strong> 2
+          </li>
+          <li>
+            <strong>Doubled Count:</strong> 4
+          </li>
+          <li>
+            <button> Increment Count </button>
+          </li>
+        </ul>
+      </div>
+      <!--v-if-->
+    </div>
+  </div>
+</header>
+<main>
+  <div class="item">
+    <div class="details">
+      <h3>Documentation</h3>
+      <a href="#" title="vuejs.org">Vue</a>, <a href="#" title="nwjs.io">NW.js</a>, <a href="#" title="pinia.vuejs.org">Pinia</a>, <a href="#" title="vitejs.dev/guide/features.html">Vite</a>, <a href="#" title="router.vuejs.org">Vue Router</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="details">
+      <h3>Tooling</h3>
+      <ul>
+        <li>
+          <a href="#" title="github.com/vuejs/devtools">Vue Dev Tools</a> (built in)
+        </li>
+        <li>
+          <a href="#" title="www.sublimetext.com">Sublime Text</a> + <a href="#" title="packagecontrol.io/packages/Vue%20Syntax%20Highlight">Vue Syntax Highlighting</a>
+        </li>
+        <li>
+          <a href="#" title="vitest.dev">Vitest</a> + <a href="#" title="test-utils.vuejs.org">Vue Test-Utils</a> + <a href="#" title="github.com/tjw-lint/jest-serializer-vue-tjw">jest-serializer-vue-tjw</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="details">
+      <h3>Resources:</h3>
+      <ul>
+        <li>
+          <a href="#" title="nwutils.io">NW Utils</a>
+        </li>
+        <li>
+          <a href="#" title="github.com/vuejs/awesome-vue">Awesome Vue</a>
+        </li>
+        <li>
+          <a href="#" title="github.com/vuesomedev/awesome-vue-3">Awesome Vue 3</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="details">
+      <h3>Community</h3>
+      <ul>
+        <li>
+          <a href="#" title="chat.vuejs.org">Vue Discord Chat</a>
+        </li>
+        <li>
+          <a href="#" title="discord.gg/tyx267vKRH">NW.js Discord Chat</a>
+        </li>
+        <li>
+          <a href="#" title="discord.gg/tyx267vKRH">NW.js Gitter Chat</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+`;

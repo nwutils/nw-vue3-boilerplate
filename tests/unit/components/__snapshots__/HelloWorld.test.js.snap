@@ -1,0 +1,24 @@
+// Vitest Snapshot v1
+
+exports[`HelloWorld.vue > Desktop > Render default contents 1`] = `
+<div class="greetings">
+  <h1 class="green">Test</h1>
+  <h3> This boilerplate uses <external-link-stub name="NW.js" url="nwjs.io"></external-link-stub> + <external-link-stub name="Vite" url="vitejs.dev"></external-link-stub> + <external-link-stub name="Vue 3" url="vuejs.org"></external-link-stub> + <external-link-stub name="Pinia" url="pinia.vuejs.org"></external-link-stub> + the <external-link-stub name="superior Options API" url="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing"></external-link-stub>. </h3>
+  <div class="center mt-1">
+    <p class="container">
+      <button> Open Vue-DevTools </button>
+    </p>
+    <p class="container">
+      <button> Open App in default browser </button>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`HelloWorld.vue > Web > Render default contents 1`] = `
+<div class="greetings">
+  <h1 class="green">Test</h1>
+  <h3> This boilerplate uses <external-link-stub name="NW.js" url="nwjs.io"></external-link-stub> + <external-link-stub name="Vite" url="vitejs.dev"></external-link-stub> + <external-link-stub name="Vue 3" url="vuejs.org"></external-link-stub> + <external-link-stub name="Pinia" url="pinia.vuejs.org"></external-link-stub> + the <external-link-stub name="superior Options API" url="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing"></external-link-stub>. </h3>
+  <p> Notice that the <strong>same app conditionally renders</strong> different content in a normal browser than <strong>when ran as a desktop app</strong>. </p>
+</div>
+`;

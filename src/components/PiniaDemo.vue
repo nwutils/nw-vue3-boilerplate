@@ -5,7 +5,14 @@
     <ul>
       <li><strong>Count:</strong> {{ count }}</li>
       <li><strong>Doubled Count:</strong> {{ doubledCount }}</li>
-      <li><button @click="counterStore.incrementCount">Increment Count</button></li>
+      <li>
+        <button
+          data-test="incrementButton"
+          @click="counterStore.incrementCount"
+        >
+          Increment Count
+        </button>
+      </li>
     </ul>
   </div>
 </template>
