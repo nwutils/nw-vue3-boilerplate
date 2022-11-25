@@ -20,7 +20,7 @@
           <ExternalLink name="Vue Syntax Highlighting" url="packagecontrol.io/packages/Vue%20Syntax%20Highlight" />
         </li>
         <li>
-          <ExternalLink name="Jest" url="jestjs.io" /> +
+          <ExternalLink name="Vitest" url="vitest.dev" /> +
           <ExternalLink name="Vue Test-Utils" url="test-utils.vuejs.org" /> +
           <ExternalLink name="jest-serializer-vue-tjw" url="github.com/tjw-lint/jest-serializer-vue-tjw" />
         </li>

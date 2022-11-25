@@ -4,7 +4,7 @@ import App from '@/App.vue';
 
 describe('App.vue', () => {
   const setupWrapper = function () {
-    return testHelpers.shallowMount(App)
+    return testHelpers.mount(App);
   };
 
   describe('Desktop', () => {
