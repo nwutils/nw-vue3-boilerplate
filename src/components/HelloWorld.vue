@@ -1,6 +1,6 @@
 <template>
   <div class="greetings">
-    <h1 class="green">{{ message }}</h1>
+    <h1 class="green" data-test="message">{{ message }}</h1>
     <h3>
       This boilerplate uses
       <ExternalLink name="NW.js" url="nwjs.io" /> +
@@ -11,12 +11,18 @@
     </h3>
     <div v-if="isDesktop" class="center mt-1">
       <p class="container">
-        <button @click="nw.Window.get().showDevTools()">
+        <button
+          data-test="devToolsButton"
+          @click="nw.Window.get().showDevTools()"
+        >
           Open Vue-DevTools
         </button>
       </p>
       <p class="container">
-        <button @click="openAppInBrowser">
+        <button
+          data-test="openAppInBrowserButton"
+          @click="openAppInBrowser"
+        >
           Open App in default browser
         </button>
       </p>

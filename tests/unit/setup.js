@@ -26,17 +26,12 @@ window.webSetup = function () {
 };
 
 global.beforeEach(() => {
+  const showDevTools = vi.fn();
   window.nw = {
     process: {
       cwd: process.cwd,
       env: {
         NODE_ENV: 'development'
-      },
-      versions: {
-        chromium: '99.0.4844.84',
-        nw: '0.62.2',
-        'nw-flavor': 'sdk',
-        node: '17.7.2'
       }
     },
     require: vi.fn((module) => {
@@ -52,12 +47,11 @@ global.beforeEach(() => {
       openExternal: vi.fn()
     },
     Window: {
-      get: function () {
+      get: vi.fn(() => {
         return {
-          showDevTools: vi.fn(),
-          closeDevTools: vi.fn()
+          showDevTools
         };
-      }
+      })
     }
   };
   window.open = vi.fn();
