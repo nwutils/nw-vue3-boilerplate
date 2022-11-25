@@ -60,6 +60,7 @@ global.beforeEach(() => {
       }
     }
   };
+  window.open = vi.fn();
 });
 
 global.afterEach(() => {

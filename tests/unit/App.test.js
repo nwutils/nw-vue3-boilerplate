@@ -3,9 +3,13 @@ import testHelpers from '@@/unit/test-helpers.js';
 import App from '@/App.vue';
 
 describe('App.vue', () => {
+  const setupWrapper = function () {
+    return testHelpers.shallowMount(App)
+  };
+
   describe('Desktop', () => {
     test('Render default contents', () => {
-      const wrapper = testHelpers.shallowMount(App);
+      const wrapper = setupWrapper();
 
       expect(wrapper)
         .toMatchSnapshot();
@@ -18,7 +22,7 @@ describe('App.vue', () => {
     });
 
     test('Render default contents', () => {
-      const wrapper = testHelpers.shallowMount(App);
+      const wrapper = setupWrapper();
 
       expect(wrapper)
         .toMatchSnapshot();
