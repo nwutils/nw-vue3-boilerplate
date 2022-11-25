@@ -1,0 +1,41 @@
+// Vitest Snapshot v1
+
+exports[`App.vue > Desktop > Render default contents 1`] = `
+<header>
+  <div class="logos">
+    <img alt="NW.js logo" src="/src/assets/nw.png">
+    <img alt="Vue logo" src="/src/assets/logo.svg">
+  </div>
+  <div class="wrapper">
+    <hello-world-stub message="NW.js &amp; Vue"></hello-world-stub>
+    <hr>
+    <div class="flex">
+      <pinia-demo-stub></pinia-demo-stub>
+      <fs-example-stub></fs-example-stub>
+    </div>
+  </div>
+</header>
+<main>
+  <resource-links-stub></resource-links-stub>
+</main>
+`;
+
+exports[`App.vue > Web > Render default contents 1`] = `
+<header>
+  <div class="logos">
+    <!--v-if-->
+    <img alt="Vue logo" src="/src/assets/logo.svg">
+  </div>
+  <div class="wrapper">
+    <hello-world-stub message="Vue"></hello-world-stub>
+    <hr>
+    <div class="flex">
+      <pinia-demo-stub></pinia-demo-stub>
+      <fs-example-stub></fs-example-stub>
+    </div>
+  </div>
+</header>
+<main>
+  <resource-links-stub></resource-links-stub>
+</main>
+`;
