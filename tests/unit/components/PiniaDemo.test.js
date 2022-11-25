@@ -22,7 +22,6 @@ describe('PiniaDemo.vue', () => {
 
       const button = wrapper.find('[data-test="incrementButton"]');
       await button.trigger('click');
-      await wrapper.vm.$nextTick();
 
       expect(wrapper)
         .toMatchSnapshot();
@@ -46,7 +45,6 @@ describe('PiniaDemo.vue', () => {
 
       const button = wrapper.find('[data-test="incrementButton"]');
       await button.trigger('click');
-      await wrapper.vm.$nextTick();
 
       expect(wrapper)
         .toMatchSnapshot();

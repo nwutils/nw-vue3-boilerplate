@@ -34,7 +34,6 @@ describe('HelloWorld.vue', () => {
 
       const button = wrapper.find('[data-test="devToolsButton"]');
       await button.trigger('click');
-      await wrapper.vm.$nextTick();
 
       expect(window.nw.Window.get().showDevTools)
         .toHaveBeenCalled();

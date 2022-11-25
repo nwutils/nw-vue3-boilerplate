@@ -40,7 +40,6 @@ describe('FsExample.vue', () => {
 
       const button = wrapper.find('[data-test="fs-example-button"]');
       await button.trigger('click');
-      // await wrapper.vm.$nextTick();
 
       expect(window.nw.require)
         .toHaveBeenCalledWith('fs');
