@@ -1,8 +1,23 @@
 {
+  "ManifestComments": [
+    "Only add dependencies that you want shipped to the end user, for everything else, use devDependencies, including things that will be bundled by Vite.",
+    "NW.js requires a name and a main, everything else is optional.",
+    "The build section is used by nwjs-builder-phoenix, see its documentation for more info",
+    "To turn spell checking off, remove it from the chromium-args in this file"
+  ],
   "name": "your-app-name-here",
+  "version": "0.1.0",
   "main": "http://localhost:4175",
   "node-remote": "http://localhost:4175",
-  "version": "0.1.0",
+  "node-main": "",
+  "window": {
+    "width": 960,
+    "height": 600,
+    "min_width": 700,
+    "min_height": 500,
+    "icon": "src/assets/vue.png"
+  },
+  "private": true,
   "scripts": {
     "start": "concurrently \"npm run dev\" \"nw .\"",
     "dev": "vite --port 4175",
