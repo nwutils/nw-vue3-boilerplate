@@ -6,6 +6,9 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    outDir: 'dist-vue'
+  },
   plugins: [vue()],
   resolve: {
     alias: {
@@ -16,6 +19,9 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
+    coverage: {
+      reportsDirectory: './tests/unit/coverage'
+    },
     root: '.',
     setupFiles: [
       './tests/unit/setup.js'
