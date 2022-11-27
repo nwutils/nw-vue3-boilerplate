@@ -128,3 +128,17 @@ This will delete the existing version and download the latest version of Vue-Dev
 * [nw-vue-cli-example](https://github.com/nwutils/nw-vue-cli-example) - Use Vue CLI, has Vue 2 and Vue 3 branches.
 * [nwjs-vue](https://github.com/elegantweb/nwjs-vue) - Uses Vue-CLI 2
 * [vue-desktop-basic](https://github.com/TheJaredWilcurt/vue-desktop-basic) - Does not use a build system at all, all `.vue` files run directly in the browser context
+
+
+## Boilerplate maintainer notes
+
+This is not for those *using* this repo, but for those *maintaining* it.
+
+1. When updating the version of NW.js devDependency, also update these:
+   * `package.json` devDeps, build nwVersion
+   * `build.target` in `vite.config.js`
+   * Update the Node version number in the README
+1. Bump the version number, and all the npm scripts that reference the version number
+1. Run `npm run regression` after updating dependencies or other major changes to verify builds still work correctly
+
+
