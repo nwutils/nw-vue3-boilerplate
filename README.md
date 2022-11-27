@@ -1,4 +1,6 @@
-# NW.js + Vue 3
+# NW.js + Vue 3 Desktop App Boilerplate
+
+![A screenshot of the default app running on Windows](screenshot.png)
 
 
 * * *
@@ -91,10 +93,12 @@ Uses rules in `./eslint.json`
 1. `npm t -- -u` runs all unit tests, updating snapshots (use with care)
 
 
-## Build
+## Building for distribution
 
-1. `npm run build` to build the app for distribution
-1. `npm run preview` to manually test the built app
+1. `npm run build:clean` will delete your `./dist` and `./dist-vue` folders
+1. `npm run build:vue` will build just your Vue app for web distribution (`./dist-vue`)
+1. `npm run build:nw` will build just your NW.js app (`./dist`) for all supported platforms (Windows, OSX, Linux 32-Bit, Linux 64-Bit)
+1. `npm run build` is your all-in-one command. It will clean out the old dist folders and build your Vue and NW.js app
 
 
 ## Removing Pinia
