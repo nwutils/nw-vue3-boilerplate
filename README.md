@@ -106,7 +106,7 @@ Uses rules in `./eslint.json`
 
 ## IMPORTANT NOTE ABOUT BUILDS
 
-They take a long time. If you do `npm run build` expect it to take 10-30 minutes. This can be adjusted by changing the build params in the `package.json`. The more platforms and build types, the longer it takes. You can also remove the `--concurrent` from the build:nw script to see a status of what has been completed. This will allow individual pieces to finish faster, but the entire build will take longer.
+They take a long time. If you do `npm run build` expect it to take 10-30 minutes. This can be adjusted by changing the build params in the `package.json`. The more platforms and build types, the longer it takes. You can also remove the `--concurrent` from the `build:nw` script to see a status of what has been completed. This will allow individual pieces to finish faster, but the entire build will take longer.
 
 
 ## Removing Pinia
