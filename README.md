@@ -18,8 +18,8 @@ This boilerplate is still in progress and not ready for production use yet (wait
 
 * **Vue 3** - Frontend framework
 * **NW.js** - Desktop App runtime environment
-  * Chromium 101
-  * Node.js 17.8.0
+  * Chromium 107
+  * Node.js 19.0.0
 * **Vue-DevTools** (latest) - Built in to the Chromium dev tools
 * **Vite** - Dev Server/Bundler/App build tool
 * **Pinia** - Global State Management
@@ -137,8 +137,7 @@ This is not for those *using* this repo, but for those *maintaining* it.
 1. When updating the version of NW.js devDependency, also update these:
    * `package.json` devDeps, build nwVersion
    * `build.target` in `vite.config.js`
-   * Update the Node version number in the README
+   * Update the Chromium/Node version numbers at the top of the README
+   * Update the Node version number in the README "Running Locally"
 1. Bump the version number, and all the npm scripts that reference the version number
 1. Run `npm run regression` after updating dependencies or other major changes to verify builds still work correctly
-
-
