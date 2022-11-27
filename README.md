@@ -74,7 +74,7 @@ Or even directly from the template (with some slight changes to work within the 
 1. Install a Node version manager:
    * [volta.sh](https://votla.sh) - Win/Lin/OSX
    * [nvm](https://github.com/nvm-sh/nvm) - Lin/OSX
-1. Install Node 17.8.0
+1. Install Node 19.0.0
 1. Run `npm install`
 1. Run `npm start`
 
