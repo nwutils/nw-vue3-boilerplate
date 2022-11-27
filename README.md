@@ -2,15 +2,15 @@
 
 The easiest, quickest, and best option for building Desktop Apps with Vue.
 
-**Does this work for web or just desktop?**
-
-**Both.** This repo will build both for web and desktop and includes a simple `this.isDesktop` flag so you can add Desktop specific features that won't show on the web. This repo has 100% test coverage including tests for both web and desktop builds. You could even theoretically add NativeScript-Vue into the mix and build for native mobile as well (though that is not set up in this repo).
-
 100% test coverage. Vue-DevTools built in.
 
-Run `npm run build` and you're ready to ship/deploy: Web App, Windows Installer, OSX and Linux apps.
-
 All you do is `npm install && npm start` and you got a desktop app and web app development environment with Vue-DevTools built-in.
+
+**Does this work for web or just desktop?**
+
+**Both.** This repo will build both for web and desktop and includes a simple `this.isDesktop` flag so you can add desktop specific features that won't show on the web. This repo has 100% test coverage including tests for both web and desktop builds. You could even theoretically add NativeScript-Vue into the mix and build for native mobile as well (though that is not set up in this repo).
+
+Run `npm run build` and you're ready to ship/deploy: Web App, Windows Installer, OSX and Linux apps.
 
 ![A screenshot of the default app running on Windows](screenshot.png)
 
