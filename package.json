@@ -107,8 +107,8 @@
       "build"
     ],
     "overriddenProperties": {
-      "main": "http://localhost:8965",
-      "node-remote": "http://localhost:8965",
+      "main": "http://localhost:4185",
+      "node-remote": "http://localhost:4185",
       "node-main": "server.js",
       "chromium-args": "--enable-spell-checking",
       "window": {
