@@ -37,6 +37,9 @@ hr {
   margin: 15px 0px;
 }
 
+.flex {
+  display: flex;
+}
 .container {
   display: inline-block;
   min-width: 200px;

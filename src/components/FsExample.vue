@@ -21,10 +21,8 @@
     <template v-if="contents.length">
       <p>
         <strong>The contents of the current working directory:</strong>
+        {{ contents.join(', ') }}
       </p>
-      <ul>
-        <li>{{ contents.join(', ') }}</li>
-      </ul>
     </template>
   </div>
 </template>
