@@ -6,7 +6,7 @@
     "To turn spell checking off, remove it from the chromium-args in this file"
   ],
   "name": "your-app-name",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "http://localhost:4175",
   "node-remote": "http://localhost:4175",
   "node-main": "",

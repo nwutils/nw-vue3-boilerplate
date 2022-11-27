@@ -1,35 +1,38 @@
 # NW.js + Vue 3 Desktop App Boilerplate
 
+The easiest, quickest, and best option for building Desktop Apps with Vue.
+
+100% test coverage. Vue-DevTools built in.
+
+All you do is `npm install && npm start` and you got a desktop app and web app development environment with Vue-DevTools built-in.
+
+**Does this work for web or just desktop?**
+
+**Both.** This repo will build both for web and desktop and includes a simple `this.isDesktop` flag so you can add desktop specific features that won't show on the web. This repo has 100% test coverage including tests for both web and desktop builds. You could even theoretically add NativeScript-Vue into the mix and build for native mobile as well (though that is not set up in this repo).
+
+Run `npm run build` and you're ready to ship/deploy: Web App, Windows Installer, OSX and Linux apps.
+
 ![A screenshot of the default app running on Windows](screenshot.png)
 
 
-* * *
-
-
-## WIP
-
-This boilerplate is still in progress and not ready for production use yet (wait for v1.0.0+).
-
-
-* * *
-
-
-## High level boilerplate features
+## Technology colophon
 
 * **Vue 3** - Frontend framework
 * **NW.js** - Desktop App runtime environment
   * Chromium 107
   * Node.js 19.0.0
-* **Vue-DevTools** (latest) - Built in to the Chromium dev tools
+* **Vue-DevTools** - Built in to the Chromium dev tools
 * **Vite** - Dev Server/Bundler/App build tool
 * **Pinia** - Global State Management
 * **Options API** - Component organizational structure
+* **NW-Builder-Phoenix** - Automated desktop builds
 * **ESLint** - Code error prevention and stylistic consistency
   * Vue Linting
-  * A11Y Linting
-  * Jest Linting
+  * Accessibility Linting
+  * Test Linting
   * Import Linting
 * **Vitest** - Vite-based Unit/integration/behavioral testing
+  * 100% test coverage examples
   * @vue/test-utils - Test helpers for interacting with Vue in tests
   * jest-serializer-vue-tjw - Dramatically improved snapshot formatting
   * @pinia/testing - Initialize Pinia in tests
@@ -74,7 +77,7 @@ Or even directly from the template (with some slight changes to work within the 
 1. Install a Node version manager:
    * [volta.sh](https://votla.sh) - Win/Lin/OSX
    * [nvm](https://github.com/nvm-sh/nvm) - Lin/OSX
-1. Install Node 19.0.0
+1. Install and use Node 19.0.0 (`node -v`)
 1. Run `npm install`
 1. Run `npm start`
 
@@ -101,6 +104,11 @@ Uses rules in `./eslint.json`
 1. `npm run build` is your all-in-one command. It will clean out the old dist folders and build your Vue and NW.js app
 
 
+## IMPORTANT NOTE ABOUT BUILDS
+
+They take a long time. If you do `npm run build` expect it to take 10-30 minutes. This can be adjusted by changing the build params in the `package.json`. The more platforms and build types, the longer it takes. You can also remove the `--concurrent` from the `build:nw` script to see a status of what has been completed. This will allow individual pieces to finish faster, but the entire build will take longer.
+
+
 ## Removing Pinia
 
 I set up Pinia in this project to save you time (and because it's amazing). If you don't need global state management for your project, you can remove Pinia by doing the following:
@@ -111,7 +119,8 @@ I set up Pinia in this project to save you time (and because it's amazing). If y
 * Remove the lines of code from `/src/App.vue` that contain the text "PiniaDemo"
 * Remove the lines of code from `/package.json` that say "pinia"
 * Remove the lines of code from `/tests/unit/setup.js` that say "pinia"
-* `npm install && npm t -- -u && git add -A && git commit -m "Removed Pinia"`
+* `npm install && npm t -- -u`
+* `git add -A && git commit -m "Removed Pinia"`
 
 
 ## Updating Vue-DevTools
