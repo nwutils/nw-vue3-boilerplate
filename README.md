@@ -1,4 +1,6 @@
-# NW.js + Vue 3
+# NW.js + Vue 3 Desktop App Boilerplate
+
+![A screenshot of the default app running on Windows](screenshot.png)
 
 
 * * *
@@ -72,7 +74,7 @@ Or even directly from the template (with some slight changes to work within the 
 1. Install a Node version manager:
    * [volta.sh](https://votla.sh) - Win/Lin/OSX
    * [nvm](https://github.com/nvm-sh/nvm) - Lin/OSX
-1. Install Node 17.8.0
+1. Install Node 19.0.0
 1. Run `npm install`
 1. Run `npm start`
 
@@ -91,10 +93,12 @@ Uses rules in `./eslint.json`
 1. `npm t -- -u` runs all unit tests, updating snapshots (use with care)
 
 
-## Build
+## Building for distribution
 
-1. `npm run build` to build the app for distribution
-1. `npm run preview` to manually test the built app
+1. `npm run build:clean` will delete your `./dist` and `./dist-vue` folders
+1. `npm run build:vue` will build just your Vue app for web distribution (`./dist-vue`)
+1. `npm run build:nw` will build just your NW.js app (`./dist`) for all supported platforms (Windows, OSX, Linux 32-Bit, Linux 64-Bit)
+1. `npm run build` is your all-in-one command. It will clean out the old dist folders and build your Vue and NW.js app
 
 
 ## Removing Pinia
@@ -121,6 +125,20 @@ This will delete the existing version and download the latest version of Vue-Dev
 
 ## Alternatives
 
-* [nw-vue-cli-example](https://github.com/nwutils/nw-vue-cli-example) - Use Vue CLI, has Vue 2 and Vue 3 branches.
+* [nw-vue-cli-example](https://github.com/nwutils/nw-vue-cli-example) - Uses Vue-CLI, has Vue 2 and Vue 3 branches.
 * [nwjs-vue](https://github.com/elegantweb/nwjs-vue) - Uses Vue-CLI 2
 * [vue-desktop-basic](https://github.com/TheJaredWilcurt/vue-desktop-basic) - Does not use a build system at all, all `.vue` files run directly in the browser context
+
+
+## Boilerplate maintainer notes
+
+This is not for those *using* this repo, but for those *maintaining* it.
+
+1. When updating the version of NW.js devDependency, also update these:
+   * `package.json` devDeps, build nwVersion
+   * `build.target` in `vite.config.js`
+   * Update the Node version number in the README
+1. Bump the version number, and all the npm scripts that reference the version number
+1. Run `npm run regression` after updating dependencies or other major changes to verify builds still work correctly
+
+

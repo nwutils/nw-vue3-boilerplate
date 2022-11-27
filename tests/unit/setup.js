@@ -32,6 +32,9 @@ global.beforeEach(() => {
       cwd: process.cwd,
       env: {
         NODE_ENV: 'development'
+      },
+      versions: {
+        'nw-flavor': 'sdk'
       }
     },
     require: vi.fn((module) => {
