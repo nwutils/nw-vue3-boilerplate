@@ -10,9 +10,8 @@
       the <ExternalLink name="superior Options API" url="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing" />.
     </h3>
     <div v-if="isDesktop" class="center mt-1">
-      <p class="container">
+      <p v-if="isDevMode" class="container">
         <button
-          v-if="isDevMode"
           data-test="devToolsButton"
           @click="nw.Window.get().showDevTools()"
         >
