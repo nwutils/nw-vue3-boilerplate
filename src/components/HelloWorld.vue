@@ -12,6 +12,7 @@
     <div v-if="isDesktop" class="center mt-1">
       <p class="container">
         <button
+          v-if="isDevMode"
           data-test="devToolsButton"
           @click="nw.Window.get().showDevTools()"
         >
@@ -53,6 +54,11 @@ export default {
       if (this.isDesktop) {
         this.nw.Shell.openExternal(window.location.href);
       }
+    }
+  },
+  computed: {
+    isDevMode: function () {
+      return this.isDesktop && this.process.versions['nw-flavor'] === 'sdk';
     }
   }
 };
