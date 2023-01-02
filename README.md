@@ -75,7 +75,7 @@ Or even directly from the template (with some slight changes to work within the 
 
 1. Download/Fork/Clone repo
 1. Install a Node version manager:
-   * [volta.sh](https://votla.sh) - Win/Lin/OSX
+   * [volta.sh](https://volta.sh) - Win/Lin/OSX
    * [nvm](https://github.com/nvm-sh/nvm) - Lin/OSX
 1. Install and use Node 19.0.0 (`node -v`)
 1. Run `npm install`
