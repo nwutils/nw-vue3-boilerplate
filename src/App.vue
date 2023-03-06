@@ -63,6 +63,7 @@ header {
   text-align: center;
 }
 .logos img {
+  width: 125px;
   max-width: 125px;
   max-height: 125px;
   margin: 0rem 1rem 2rem 1rem;
