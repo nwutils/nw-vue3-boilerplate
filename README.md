@@ -137,6 +137,7 @@ This will delete the existing version and download the latest version of Vue-Dev
 * [nw-vue-cli-example](https://github.com/nwutils/nw-vue-cli-example) - Uses Vue-CLI, has Vue 2 and Vue 3 branches.
 * [nwjs-vue](https://github.com/elegantweb/nwjs-vue) - Uses Vue-CLI 2
 * [vue-desktop-basic](https://github.com/TheJaredWilcurt/vue-desktop-basic) - Does not use a build system at all, all `.vue` files run directly in the browser context
+* [nw-vue3-typescript-pinia](https://github.com/codeh2o/nw-vue3-typescript-pinia) - Fork of this repo but with TS added
 
 
 ## Boilerplate maintainer notes
