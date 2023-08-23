@@ -8,7 +8,7 @@ exports[`App.vue > Desktop > Render default contents 1`] = `
   </div>
   <div class="wrapper">
     <div class="greetings">
-      <h1 class="green">NW.js &amp; Vue</h1>
+      <h1 class="green">NW.js & Vue</h1>
       <h3> This boilerplate uses <a href="#" title="nwjs.io">NW.js</a> + <a href="#" title="vitejs.dev">Vite</a> + <a href="#" title="vuejs.org">Vue 3</a> + <a href="#" title="pinia.vuejs.org">Pinia</a> + the <a href="#" title="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing">superior Options API</a>. </h3>
       <div class="center mt-1">
         <p class="container">

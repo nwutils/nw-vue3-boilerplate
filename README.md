@@ -19,8 +19,8 @@ Run `npm run build` and you're ready to ship/deploy: Web App, Windows Installer,
 
 * **Vue 3** - Frontend framework
 * **NW.js** - Desktop App runtime environment
-  * Chromium 107
-  * Node.js 19.0.0
+  * Chromium 116
+  * Node.js 20.5.0
 * **Vue-DevTools** - Built in to the Chromium dev tools
 * **Vite** - Dev Server/Bundler/App build tool
 * **Pinia** - Global State Management
@@ -77,7 +77,7 @@ Or even directly from the template (with some slight changes to work within the 
 1. Install a Node version manager:
    * [volta.sh](https://volta.sh) - Win/Lin/OSX
    * [nvm](https://github.com/nvm-sh/nvm) - Lin/OSX
-1. Install and use Node 19.0.0 (`node -v`)
+1. Install and use Node 20.5.0 (`node -v`)
 1. Run `npm install`
 1. Run `npm start`
 

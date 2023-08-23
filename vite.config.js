@@ -8,7 +8,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   build: {
     // Make sure this matches the Chromium version built into NW.js
-    target: 'chrome107',
+    target: 'chrome116',
     outDir: 'dist-vue'
   },
   plugins: [vue()],
@@ -20,7 +20,7 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    environment: 'jsdom',
+    environment: 'happy-dom',
     coverage: {
       reportsDirectory: './tests/unit/coverage'
     },
