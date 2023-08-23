@@ -2,11 +2,11 @@ import { createPinia } from 'pinia';
 import { createApp } from 'vue';
 import constantsPlugin from 'vue-options-api-constants-plugin';
 
+import { router } from '@/router/index.js';
+
 import applyPrototypes from '@/helpers/applyPrototypes.js';
 
 import App from '@/App.vue';
-
-import { router } from '@/router/index.js';
 
 import '@/assets/main.css';
 
