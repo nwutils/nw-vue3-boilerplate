@@ -68,9 +68,11 @@
     "vite": "^4.4.9",
     "vitest": "^0.34.2",
     "vue": "^3.3.4",
+    "vue-options-api-constants-plugin": "^1.0.1",
+    "vue-router": "^4.2.4",
     "wait-on": "^7.0.1"
   },
-  "chromium-args": "--enable-spell-checking --load-extension='./node_modules/nw-vue-devtools-prebuilt/extension'",
+  "chromium-args": "--enable-spell-checking --load-extension='./node_modules/nw-vue-devtools-prebuilt/extension' --disable-features=ProcessPerSiteUpToMainFrameThreshold",
   "build": {
     "nwVersion": "v0.79.0",
     "nwFlavor": "normal",

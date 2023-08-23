@@ -24,7 +24,9 @@ Run `npm run build` and you're ready to ship/deploy: Web App, Windows Installer,
 * **Vue-DevTools** - Built in to the Chromium dev tools
 * **Vite** - Dev Server/Bundler/App build tool
 * **Pinia** - Global State Management
+* **Vue-Router** - Frontend routing/navigation
 * **Options API** - [Component organizational structure](https://user-images.githubusercontent.com/4629794/204181213-6c9bcece-62fb-4790-8fc2-7df546ca7df5.png)
+* **Constants Plugin** - Gives you a [dedicated place to store constants](https://github.com/TheJaredWilcurt/vue-options-api-constants-plugin) in a component
 * **NW-Builder-Phoenix** - Automated desktop builds
 * **ESLint** - Code error prevention and stylistic consistency
   * Vue Linting
