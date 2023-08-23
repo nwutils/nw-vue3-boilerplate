@@ -20,7 +20,7 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    environment: 'jsdom',
+    environment: 'happy-dom',
     coverage: {
       reportsDirectory: './tests/unit/coverage'
     },
