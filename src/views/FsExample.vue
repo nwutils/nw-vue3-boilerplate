@@ -22,25 +22,15 @@
       <p>
         <strong>The files in the current working directory:</strong>
       </p>
-      <div class="contents">
-        <button
+      <ul class="columns">
+        <li
           v-for="(name, index) in contents"
-          @click="getFileContents(name)"
           :key="'contents' + index"
         >
           {{ name }}
-        </button>
-      </div>
+        </li>
+      </ul>
     </template>
-    <label for="fileData">
-      <strong>
-        File Contents:
-      </strong>
-    </label>
-    <textarea
-      v-model="fileData"
-      id="fileData"
-    ></textarea>
   </div>
 </template>
 
@@ -59,30 +49,10 @@ export default {
       if (this.isDesktop) {
         const fs = this.require('fs');
         try {
-          this.contents = fs
-            .readdirSync('.', { withFileTypes: true })
-            .filter((file) => {
-              return file.isFile();
-            })
-            .map((file) => {
-              return file.name;
-            });
+          this.contents = fs.readdirSync('.');
           this.error = false;
         } catch (err) {
           this.contents = [];
-          this.error = true;
-        }
-      }
-    },
-    getFileContents: function (file) {
-      if (this.isDesktop) {
-        const fs = this.require('fs');
-        const path = this.require('path');
-        try {
-          this.fileData = String(fs.readFileSync(path.join('.', file)));
-          this.error = false;
-        } catch (err) {
-          this.fileData = '';
           this.error = true;
         }
       }
@@ -92,15 +62,11 @@ export default {
 </script>
 
 <style scoped>
-.contents {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+p {
+  margin: 1rem 0rem 0.5rem;
 }
-.contents button {
-  background: #FFF2;
-  margin: 0.5rem 0.5rem 0.5rem 0rem;
-  padding: 0.25rem 0.5rem;
-  color: #CCC;
+.columns {
+  column-count: 3;
+  column-gap: 4rem;
 }
 </style>

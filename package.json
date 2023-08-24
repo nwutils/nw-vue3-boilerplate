@@ -13,7 +13,7 @@
   "window": {
     "width": 960,
     "height": 600,
-    "min_width": 700,
+    "min_width": 800,
     "min_height": 500,
     "icon": "public/icon.png"
   },
