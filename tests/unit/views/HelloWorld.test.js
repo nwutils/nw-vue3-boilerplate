@@ -3,12 +3,13 @@ import testHelpers from '@@/unit/test-helpers.js';
 import HelloWorld from '@/views/HelloWorld.vue';
 
 describe('HelloWorld.vue', () => {
-  const message = 'Test';
+  const requiredProps = {};
 
   const setupWrapper = async () => {
-    const requiredProps = { message };
     const options = {
-      props: requiredProps
+      props: {
+        ...requiredProps
+      }
     };
     const wrapper = await testHelpers.shallowMount(HelloWorld, options);
     return wrapper;
@@ -25,8 +26,11 @@ describe('HelloWorld.vue', () => {
     test('Message prop displays correctly', async () => {
       const wrapper = await setupWrapper();
 
+      expect(wrapper.find('[data-test="appName"]').text())
+        .toEqual('Your App Name Here');
+
       expect(wrapper.find('[data-test="message"]').text())
-        .toEqual(message);
+        .toEqual('NW.js & Vue Boilerplate');
     });
 
     test('Open dev tools', async () => {
@@ -66,7 +70,7 @@ describe('HelloWorld.vue', () => {
       const wrapper = await setupWrapper();
 
       expect(wrapper.find('[data-test="message"]').text())
-        .toEqual(message);
+        .toEqual('Vue Boilerplate');
     });
   });
 });

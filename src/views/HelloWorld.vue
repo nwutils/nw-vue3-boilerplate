@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <div class="greetings">
     <div class="logos">
       <img
         v-if="isDesktop"
@@ -12,44 +12,40 @@
       />
     </div>
 
-    <div class="wrapper">
-      <div class="greetings">
-        <h1 class="green" data-test="message">{{ APP_NAME }}</h1>
-        <h2 class="green">{{ message }}</h2>
-        <h3>
-          This boilerplate uses
-          <ExternalLink name="NW.js" url="nwjs.io" /> +
-          <ExternalLink name="Vite" url="vitejs.dev" /> +
-          <ExternalLink name="Vue 3" url="vuejs.org" /> +
-          <ExternalLink name="Pinia" url="pinia.vuejs.org" /> +
-          <ExternalLink name="Vue-Router" url="router.vuejs.org" /> +
-          the <ExternalLink name="superior Options API" url="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing" />.
-        </h3>
-        <div v-if="isDesktop" class="center mt-1">
-          <p v-if="isDevMode" class="container">
-            <button
-              data-test="devToolsButton"
-              @click="nw.Window.get().showDevTools()"
-            >
-              Open Vue-DevTools
-            </button>
-          </p>
-          <p class="container">
-            <button
-              data-test="openAppInBrowserButton"
-              @click="openAppInBrowser"
-            >
-              Open App in default browser
-            </button>
-          </p>
-        </div>
-        <p v-else>
-          Notice that the <strong>same app conditionally renders</strong> different content
-          in a normal browser than <strong>when ran as a desktop app</strong>.
-        </p>
-      </div>
+    <h1 class="green" data-test="appName">{{ APP_NAME }}</h1>
+    <h2 class="green" data-test="message">{{ message }}</h2>
+    <h3>
+      This boilerplate uses
+      <ExternalLink name="NW.js" url="nwjs.io" /> +
+      <ExternalLink name="Vite" url="vitejs.dev" /> +
+      <ExternalLink name="Vue 3" url="vuejs.org" /> +
+      <ExternalLink name="Pinia" url="pinia.vuejs.org" /> +
+      <ExternalLink name="Vue-Router" url="router.vuejs.org" /> +
+      the <ExternalLink name="superior Options API" url="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing" />.
+    </h3>
+    <div v-if="isDesktop" class="center mt-1">
+      <p v-if="isDevMode" class="container">
+        <button
+          data-test="devToolsButton"
+          @click="nw.Window.get().showDevTools()"
+        >
+          Open Vue-DevTools
+        </button>
+      </p>
+      <p class="container">
+        <button
+          data-test="openAppInBrowserButton"
+          @click="openAppInBrowser"
+        >
+          Open App in default browser
+        </button>
+      </p>
     </div>
-  </header>
+    <p v-else>
+      Notice that the <strong>same app conditionally renders</strong> different content
+      in a normal browser than <strong>when ran as a desktop app</strong>.
+    </p>
+  </div>
 </template>
 
 <script>
@@ -88,13 +84,13 @@ export default {
 
 <style scoped>
 .logos {
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logos img {
-  width: 125px;
-  max-width: 125px;
-  max-height: 125px;
+  max-width: 160px;
+  max-height: 160px;
   margin: 1rem 1rem 1rem 1rem;
 }
 
