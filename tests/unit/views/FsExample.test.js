@@ -1,6 +1,6 @@
 import testHelpers from '@@/unit/test-helpers.js';
 
-import FsExample from '@/components/FsExample.vue';
+import FsExample from '@/views/FsExample.vue';
 
 describe('FsExample.vue', () => {
   const setupWrapper = async () => {

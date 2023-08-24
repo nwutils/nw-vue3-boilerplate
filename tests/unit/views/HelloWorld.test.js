@@ -1,6 +1,6 @@
 import testHelpers from '@@/unit/test-helpers.js';
 
-import HelloWorld from '@/components/HelloWorld.vue';
+import HelloWorld from '@/views/HelloWorld.vue';
 
 describe('HelloWorld.vue', () => {
   const message = 'Test';
