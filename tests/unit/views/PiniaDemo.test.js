@@ -1,6 +1,6 @@
 import testHelpers from '@@/unit/test-helpers.js';
 
-import PiniaDemo from '@/components/PiniaDemo.vue';
+import PiniaDemo from '@/views/PiniaDemo.vue';
 
 describe('PiniaDemo.vue', () => {
   const setupWrapper = async () => {

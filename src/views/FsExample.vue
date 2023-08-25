@@ -21,8 +21,15 @@
     <template v-if="contents.length">
       <p>
         <strong>The contents of the current working directory:</strong>
-        {{ contents.join(', ') }}
       </p>
+      <ul class="columns">
+        <li
+          v-for="(name, index) in contents"
+          :key="'contents' + index"
+        >
+          {{ name }}
+        </li>
+      </ul>
     </template>
   </div>
 </template>
@@ -52,3 +59,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+p {
+  margin: 1rem 0rem 0.5rem;
+}
+.columns {
+  column-count: 3;
+  column-gap: 4rem;
+}
+</style>

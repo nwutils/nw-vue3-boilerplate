@@ -1,89 +1,55 @@
 <template>
   <header>
-    <div class="logos">
-      <img
+    <nav>
+      <RouterLink :to="{ name: 'welcome' }">
+        Welcome
+      </RouterLink>
+      <RouterLink
         v-if="isDesktop"
-        alt="NW.js logo"
-        src="./assets/nw.png"
-      />
-      <img
-        alt="Vue logo"
-        src="./assets/logo.svg"
-      />
-    </div>
-
-    <div class="wrapper">
-      <HelloWorld :message="message" />
-      <hr />
-      <div class="flex">
-        <PiniaDemo />
-        <FsExample />
-      </div>
-    </div>
+        :to="{ name: 'fs' }"
+      >
+        File System Demo
+      </RouterLink>
+      <RouterLink :to="{ name: 'pinia' }">
+        Pinia Demo
+      </RouterLink>
+      <RouterLink :to="{ name: 'resources' }">
+        Resources
+      </RouterLink>
+    </nav>
   </header>
 
   <main>
-    <ResourceLinks />
+    <RouterView />
   </main>
 </template>
 
 <script>
-import FsExample from '@/components/FsExample.vue';
-import HelloWorld from '@/components/HelloWorld.vue';
-import PiniaDemo from '@/components/PiniaDemo.vue';
-import ResourceLinks from '@/components/ResourceLinks.vue';
-
 export default {
-  name: 'App',
-  components: {
-    FsExample,
-    HelloWorld,
-    PiniaDemo,
-    ResourceLinks
-  },
-  computed: {
-    message: function () {
-      let message = 'Vue';
-      if (this.isDesktop) {
-        message = 'NW.js & ' + message;
-      }
-      return message;
-    }
-  }
+  name: 'App'
 };
 </script>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logos {
-  display: block;
+nav {
+  margin-bottom: 2rem;
   text-align: center;
 }
-.logos img {
-  width: 125px;
-  max-width: 125px;
-  max-height: 125px;
-  margin: 0rem 1rem 2rem 1rem;
+nav a {
+  background: #FFF3;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: 15px;
-  }
-
-  .logo {
-    margin: 0px 2rem 0px 0px;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+nav a:hover {
+  background: #FFF5;
+  color: #FFF;
+}
+.router-link-active {
+  background: #FFF7;
+  color: #FFF;
+}
+.router-link-active:hover {
+  background: #FFF8;
 }
 </style>
