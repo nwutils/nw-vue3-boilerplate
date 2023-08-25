@@ -6,7 +6,7 @@ exports[`FsExample.vue > Desktop > Click button 1`] = `
   <!--v-if-->
   <button> Click for File System example </button>
   <p>
-    <strong>The files in the current working directory:</strong>
+    <strong>The contents of the current working directory:</strong>
   </p>
   <ul class="columns">
     <li>example-file-1.ext</li>
