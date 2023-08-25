@@ -75,7 +75,7 @@ Or even directly from the template (with some slight changes to work within the 
 
 ## Running locally
 
-1. Download/Fork/Clone repo
+1. Download, Fork, or Clone this repo
 1. Install a Node version manager:
    * [volta.sh](https://volta.sh) - Win/Lin/OSX
    * [nvm](https://github.com/nvm-sh/nvm) - Lin/OSX
@@ -116,11 +116,12 @@ They take a long time. If you do `npm run build` expect it to take 10-30 minutes
 I set up Pinia in this project to save you time (and because it's amazing). If you don't need global state management for your project, you can remove Pinia by doing the following:
 
 * Delete the `/src/store` folder and its contents
-* Delete `/src/components/PiniaDemo.vue`
-* Delete `/tests/unit/components/PiniaDemo.test.js`
-* Remove the lines of code from `/src/App.vue` that contain the text "PiniaDemo"
+* Delete `/src/views/PiniaDemo.vue`
+* Delete `/tests/unit/views/PiniaDemo.test.js`
+* Remove the Pinia Demo `RouterLink` from `/src/App.vue`
+* Remove import and route object relating to "PiniaDemo" from `/src/router/index.js`
+* Remove the lines of code from `/tests/unit/test-helpers.js` that say "pinia"
 * Remove the lines of code from `/package.json` that say "pinia"
-* Remove the lines of code from `/tests/unit/setup.js` that say "pinia"
 * `npm install && npm t -- -u`
 * `git add -A && git commit -m "Removed Pinia"`
 
@@ -136,7 +137,7 @@ This will delete the existing version and download the latest version of Vue-Dev
 
 ## Alternatives
 
-* [nw-vue-cli-example](https://github.com/nwutils/nw-vue-cli-example) - Uses Vue-CLI, has Vue 2 and Vue 3 branches.
+* [nw-vue-cli-example](https://github.com/nwutils/nw-vue-cli-example) - Uses Vue-CLI (WebPack), has Vue 2 and Vue 3 branches.
 * [nwjs-vue](https://github.com/elegantweb/nwjs-vue) - Uses Vue-CLI 2
 * [vue-desktop-basic](https://github.com/TheJaredWilcurt/vue-desktop-basic) - Does not use a build system at all, all `.vue` files run directly in the browser context
 * [nw-vue3-typescript-pinia](https://github.com/codeh2o/nw-vue3-typescript-pinia) - Fork of this repo but with TS added
@@ -147,7 +148,7 @@ This will delete the existing version and download the latest version of Vue-Dev
 This is not for those *using* this repo, but for those *maintaining* it.
 
 1. When updating the version of NW.js devDependency, also update these:
-   * `package.json` devDeps, build nwVersion
+   * `package.json` version, devDeps, build nwVersion
    * `build.target` in `vite.config.js`
    * Update the Chromium/Node version numbers at the top of the README
    * Update the Node version number in the README "Running Locally"
