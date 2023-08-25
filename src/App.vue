@@ -37,11 +37,19 @@ nav {
 }
 nav a {
   background: #FFF3;
+  border-radius: 0.5rem;
   margin: 2rem;
   padding: 0.5rem 1rem;
 }
 nav a:hover {
-  background:  #FFF5;
-  color:  #FFF;
+  background: #FFF5;
+  color: #FFF;
+}
+.router-link-active {
+  background: #FFF7;
+  color: #FFF;
+}
+.router-link-active:hover {
+  background: #FFF8;
 }
 </style>
