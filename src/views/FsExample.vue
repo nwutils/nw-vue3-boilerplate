@@ -20,7 +20,7 @@
 
     <template v-if="contents.length">
       <p>
-        <strong>The files in the current working directory:</strong>
+        <strong>The contents of the current working directory:</strong>
       </p>
       <ul class="columns">
         <li
@@ -40,7 +40,6 @@ export default {
   data: function () {
     return {
       contents: [],
-      fileData: '',
       error: false
     };
   },
