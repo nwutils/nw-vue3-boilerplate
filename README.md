@@ -19,8 +19,8 @@ Run `npm run build` and you're ready to ship/deploy: Web App, Windows Installer,
 
 * **Vue 3** - Frontend framework
 * **NW.js** - Desktop App runtime environment
-  * Chromium 116
-  * Node.js 20.5.0
+  * Chromium 119
+  * Node.js 20.7.0
 * **Vue-DevTools** - Built in to the Chromium dev tools
 * **Vite** - Dev Server/Bundler/App build tool
 * **Pinia** - Global State Management
@@ -76,10 +76,8 @@ Or even directly from the template (with some slight changes to work within the 
 ## Running locally
 
 1. Download, Fork, or Clone this repo
-1. Install a Node version manager:
-   * [volta.sh](https://volta.sh) - Win/Lin/OSX
-   * [nvm](https://github.com/nvm-sh/nvm) - Lin/OSX
-1. Install and use Node 20.5.0 (`node -v`)
+1. Install [Volta](https://volta.sh)
+   * It will handle using the correct Node version based on the `package.json`
 1. Run `npm install`
 1. Run `npm start`
 
@@ -89,7 +87,7 @@ Or even directly from the template (with some slight changes to work within the 
 Uses rules in `./eslint.json`
 
 1. `npm run lint` to see linting errors
-1. `npm run fix` to auto-fix linting errors where possible
+1. `npm run fix` to auto-fix linting errors (where possible)
 
 
 ## Tests
@@ -152,6 +150,5 @@ This is not for those *using* this repo, but for those *maintaining* it.
    * `package.json` version, devDeps, build nwVersion
    * `build.target` in `vite.config.js`
    * Update the Chromium/Node version numbers at the top of the README
-   * Update the Node version number in the README "Running Locally"
 1. Bump the version number, and all the npm scripts that reference the version number
 1. Run `npm run regression` after updating dependencies or other major changes to verify builds still work correctly
