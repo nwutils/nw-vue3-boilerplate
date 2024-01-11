@@ -20,7 +20,7 @@
   "private": true,
   "scripts": {
     "postinstall": "npx base-volta-off-of-nwjs@latest",
-    "start": "concurrently npm:dev:web npm:dev:desktop",
+    "start": "concurrently -k npm:dev:web npm:dev:desktop",
     "dev:web": "vite --port 4175",
     "dev:desktop": "wait-on -c waitOnConfig.json http-get://localhost:4175 && nw .",
     "build": "npm run build:clean && npm run build:vue && npm run build:nw",
