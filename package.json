@@ -37,7 +37,7 @@
     "lint": "eslint --ext .js,.vue --config=.eslintrc.cjs src vite.config.js .eslintrc.cjs",
     "fix": "eslint --fix --ext .js,.vue --config=.eslintrc.cjs src vite.config.js .eslintrc.cjs",
     "test": "vitest run --coverage",
-    "update:vue-devtools": "rimraf ./node_modules/your-app-name-devtools-prebuilt && npm install"
+    "update:vue-devtools": "rimraf ./node_modules/your-app-name-devtools-5 && npm install"
   },
   "dependencies": {
     "express": "^4.18.2"
@@ -62,7 +62,7 @@
     "happy-dom": "^12.10.3",
     "jest-serializer-vue-tjw": "^3.20.0",
     "nw": "0.82.0-sdk",
-    "nw-vue-devtools-prebuilt": "^0.0.10",
+    "nw-vue-devtools-5": "^5.0.0",
     "nwjs-builder-phoenix": "^1.15.0",
     "pinia": "^2.1.6",
     "rimraf": "^5.0.5",
@@ -73,7 +73,7 @@
     "vue-router": "^4.2.5",
     "wait-on": "^7.2.0"
   },
-  "chromium-args": "--enable-spell-checking --load-extension='./node_modules/nw-vue-devtools-prebuilt/extension' --disable-features=ProcessPerSiteUpToMainFrameThreshold",
+  "chromium-args": "--enable-spell-checking --load-extension='./node_modules/nw-vue-devtools-5/extension' --disable-features=ProcessPerSiteUpToMainFrameThreshold",
   "build": {
     "nwVersion": "v0.82.0",
     "nwFlavor": "normal",
