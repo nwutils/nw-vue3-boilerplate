@@ -19,7 +19,7 @@ describe('FsExample.vue', () => {
     test('Click button', async () => {
       const wrapper = await setupWrapper();
 
-      const button = wrapper.find('[data-test="fs-example-button"]');
+      const button = wrapper.find('[data-test="fsExampleButton"]');
       await button.trigger('click');
 
       expect(window.nw.require)
@@ -38,7 +38,7 @@ describe('FsExample.vue', () => {
 
       const wrapper = await setupWrapper();
 
-      const button = wrapper.find('[data-test="fs-example-button"]');
+      const button = wrapper.find('[data-test="fsExampleButton"]');
       await button.trigger('click');
 
       expect(window.nw.require)
