@@ -24,7 +24,7 @@ export default defineConfig({
     environment: 'happy-dom',
     coverage: {
       exclude: [
-        ...configDefaults?.coverage?.exclude,
+        ...(configDefaults?.coverage?.exclude || []),
         '**/dist-vue/**'
       ],
       reportsDirectory: './tests/unit/coverage'
