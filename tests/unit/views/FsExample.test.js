@@ -1,4 +1,4 @@
-import testHelpers from '@@/unit/test-helpers.js';
+import testHelpers from '@@/unit/testHelpers.js';
 
 import FsExample from '@/views/FsExample.vue';
 
