@@ -59,7 +59,7 @@
     "eslint-plugin-jest": "^27.9.0",
     "eslint-plugin-vue": "^9.23.0",
     "eslint-plugin-vuejs-accessibility": "^2.2.1",
-    "happy-dom": "^13.8.4",
+    "happy-dom": "^13.8.5",
     "jest-serializer-vue-tjw": "^3.20.0",
     "nw": "0.82.0-sdk",
     "nw-vue-devtools-5": "^5.0.0",
