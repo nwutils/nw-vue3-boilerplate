@@ -1,4 +1,4 @@
-import testHelpers from '@@/unit/test-helpers.js';
+import testHelpers from '@@/unit/testHelpers.js';
 
 import PiniaDemo from '@/views/PiniaDemo.vue';
 
