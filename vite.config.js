@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
+import { configDefaults } from 'vitest/dist/config.js';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,6 +23,10 @@ export default defineConfig({
     globals: true,
     environment: 'happy-dom',
     coverage: {
+      exclude: [
+        ...configDefaults?.coverage?.exclude,
+        '**/dist-vue/**'
+      ],
       reportsDirectory: './tests/unit/coverage'
     },
     root: '.',
