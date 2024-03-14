@@ -7,7 +7,7 @@
     </div>
 
     <button
-      data-test="fs-example-button"
+      data-test="fsExampleButton"
       @click="getCurrentDirectory"
     >
       <template v-if="!error">
