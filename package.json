@@ -3,7 +3,8 @@
     "Only add dependencies that you want shipped to the end user, for everything else, use devDependencies, including things that will be bundled by Vite.",
     "NW.js requires a name and a main, everything else is optional.",
     "The build section is used by nwjs-builder-phoenix, see its documentation for more info",
-    "To turn spell checking off, remove it from the chromium-args in this file"
+    "To turn spell checking off, remove it from the chromium-args in this file",
+    "Pinned @vitejs/plugin-vue to 4.5.2 because a bug was introduced in 4.6.0 where <template> is shown as not covered in HelloWorld.vue"
   ],
   "name": "your-app-name",
   "version": "1.0.4",
@@ -45,7 +46,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.10",
     "@pinia/testing": "^0.1.3",
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue": "4.5.2",
     "@vitest/coverage-v8": "^1.3.1",
     "@vue/test-utils": "^2.4.5",
     "concurrently": "^8.2.2",
