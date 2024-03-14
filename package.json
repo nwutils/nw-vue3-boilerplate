@@ -4,7 +4,7 @@
     "NW.js requires a name and a main, everything else is optional.",
     "The build section is used by nwjs-builder-phoenix, see its documentation for more info",
     "To turn spell checking off, remove it from the chromium-args in this file",
-    "Pinned @vitejs/plugin-vue to 4.5.2 because a bug was introduced in 4.6.0 where <template> is shown as not covered in HelloWorld.vue"
+    "Pinned @vitejs/plugin-vue to 4.5.2 because a bug effecting coverage. vitejs/vite-plugin-vue #368"
   ],
   "name": "your-app-name",
   "version": "1.0.4",
