@@ -2,6 +2,8 @@ import vueSnapshotSerializer from './serializer.js';
 
 expect.addSnapshotSerializer(vueSnapshotSerializer);
 
+global.document = global.window.document;
+document.body.innerHTML = '<div id="app"></div>';
 const { getComputedStyle } = window;
 
 // Prevents console log message to install Vue DevTools

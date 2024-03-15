@@ -10,7 +10,7 @@ import App from '@/App.vue';
 
 import '@/assets/main.css';
 
-const app = createApp(App);
+export const app = createApp(App);
 applyPrototypes(app.config.globalProperties);
 app.use(createPinia());
 app.use(router);
