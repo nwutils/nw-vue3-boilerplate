@@ -126,7 +126,7 @@ I set up Pinia in this project to save you time (and because it's amazing). If y
 
 ## Updating Vue-DevTools
 
-At time of writing, Vue-DevTools v6 has just been released. It is a major re-write and there are many reports of it being buggy. So for now I've changed the repo to use a pinned version of the last V5 release. If you are reading this in the future, you can try changing `nw-vue-devtools-5` with `nw-vue-devtools-prebuilt`. That dependency will download the latest Vue-DevTools from the Chromium Web Store and then patch it to work in NW.js. Make sure to update all references from `nw-vue-devtools-5` to `nw-vue-devtools-prebuilt` in the `package.json`. There is also a `npm run update:vue-devtools` script that will delete it and re-download latest from the web store if you are using the prebuilt version.
+At time of writing, Vue-DevTools v6 has just been released. It is a major re-write and there are many reports of it being buggy. So for now I've changed the repo to use a pinned version of the last V5 release. If you are reading this in the future, you can try changing `nw-vue-devtools-5` to `nw-vue-devtools-prebuilt`. The "prebuilt" dependency will download the latest Vue-DevTools from the Chromium Web Store and then patch it to work in NW.js. Make sure to update all references from `nw-vue-devtools-5` to `nw-vue-devtools-prebuilt` in the `package.json`. There is also a `npm run update:vue-devtools` script that will delete it and re-download latest from the web store if you are using the prebuilt version.
 
 
 ## Alternatives
@@ -135,12 +135,10 @@ At time of writing, Vue-DevTools v6 has just been released. It is a major re-wri
 * [nw-vue-cli-example](https://github.com/nwutils/nw-vue-cli-example) - Uses Vue-CLI (WebPack), has Vue 2 and Vue 3 branches.
 * [nwjs-vue](https://github.com/elegantweb/nwjs-vue) - Uses Vue-CLI 2
 * [vue-desktop-basic](https://github.com/TheJaredWilcurt/vue-desktop-basic) - Does not use a build system at all, all `.vue` files run directly in the browser context
-* [nw-vue3-typescript-pinia](https://github.com/codeh2o/nw-vue3-typescript-pinia) - Fork of this repo but with TS added
+* [nw-vue3-typescript-pinia](https://github.com/codeh2o/nw-vue3-typescript-pinia) - Old fork of this repo but with TS added
 
 
-## Boilerplate maintainer notes
-
-This is not for those *using* this repo, but for those *maintaining* it.
+## Updating to newer NW.js versions
 
 1. When updating the version of NW.js devDependency, also update these:
    * `package.json` version, devDeps, build nwVersion, volta
