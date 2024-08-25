@@ -57,7 +57,7 @@
     "eslint-config-tjw-vue": "^3.0.0",
     "eslint-import-resolver-webpack": "^0.13.8",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jest": "^27.9.0",
+    "eslint-plugin-jest": "^28.8.0",
     "eslint-plugin-vue": "^9.27.0",
     "eslint-plugin-vuejs-accessibility": "^2.4.1",
     "happy-dom": "^15.0.0",
@@ -72,7 +72,7 @@
     "vue": "^3.4.38",
     "vue-options-api-constants-plugin": "^1.0.1",
     "vue-router": "^4.4.3",
-    "wait-on": "^7.2.0"
+    "wait-on": "^8.0.0"
   },
   "chromium-args": "--enable-spell-checking --load-extension='./node_modules/nw-vue-devtools-5/extension' --disable-features=ProcessPerSiteUpToMainFrameThreshold",
   "build": {
