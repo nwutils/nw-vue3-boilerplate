@@ -1,6 +1,9 @@
 import testHelpers from '@@/unit/testHelpers.js';
-
 import HelloWorld from '@/views/HelloWorld.vue';
+
+function normalizeAmp(html) {
+  return html.replace(/&amp;/g, '&');
+}
 
 describe('HelloWorld.vue', () => {
   const setupWrapper = async () => {
@@ -11,9 +14,9 @@ describe('HelloWorld.vue', () => {
   describe('Desktop', () => {
     test('Render default contents', async () => {
       const wrapper = await setupWrapper();
+      const normalizedHtml = normalizeAmp(wrapper.html());
 
-      expect(wrapper)
-        .toMatchSnapshot();
+      expect(normalizedHtml).toMatchSnapshot();
     });
 
     test('App name and message displays correctly', async () => {
@@ -43,7 +46,7 @@ describe('HelloWorld.vue', () => {
       await button.trigger('click');
 
       expect(window.nw.Shell.openExternal)
-        .toHaveBeenCalledWith('http://localhost:3000/');
+        .toHaveBeenCalledWith('http://localhost:3000/#/');
     });
   });
 
@@ -54,9 +57,9 @@ describe('HelloWorld.vue', () => {
 
     test('Render default contents', async () => {
       const wrapper = await setupWrapper();
+      const normalizedHtml = normalizeAmp(wrapper.html());
 
-      expect(wrapper)
-        .toMatchSnapshot();
+      expect(normalizedHtml).toMatchSnapshot();
     });
 
     test('Message displays correctly', async () => {
