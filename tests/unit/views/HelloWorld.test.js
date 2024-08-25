@@ -43,7 +43,7 @@ describe('HelloWorld.vue', () => {
       await button.trigger('click');
 
       expect(window.nw.Shell.openExternal)
-        .toHaveBeenCalledWith('http://localhost:3000/');
+        .toHaveBeenCalledWith('http://localhost:3000/#/');
     });
   });
 
