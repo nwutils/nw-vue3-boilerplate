@@ -1,10 +1,6 @@
 import testHelpers from '@@/unit/testHelpers.js';
 import HelloWorld from '@/views/HelloWorld.vue';
 
-function normalizeAmp(html) {
-  return html.replace(/&amp;/g, '&');
-}
-
 describe('HelloWorld.vue', () => {
   const setupWrapper = async () => {
     const wrapper = await testHelpers.shallowMount(HelloWorld);
@@ -14,9 +10,7 @@ describe('HelloWorld.vue', () => {
   describe('Desktop', () => {
     test('Render default contents', async () => {
       const wrapper = await setupWrapper();
-      const normalizedHtml = normalizeAmp(wrapper.html());
-
-      expect(normalizedHtml).toMatchSnapshot();
+      expect(wrapper.html()).toMatchSnapshot();
     });
 
     test('App name and message displays correctly', async () => {
@@ -57,9 +51,8 @@ describe('HelloWorld.vue', () => {
 
     test('Render default contents', async () => {
       const wrapper = await setupWrapper();
-      const normalizedHtml = normalizeAmp(wrapper.html());
-
-      expect(normalizedHtml).toMatchSnapshot();
+      expect(wrapper.html())
+        .toMatchSnapshot();
     });
 
     test('Message displays correctly', async () => {
