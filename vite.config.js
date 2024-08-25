@@ -25,7 +25,8 @@ export default defineConfig({
     coverage: {
       exclude: [
         ...(configDefaults?.coverage?.exclude || []),
-        '**/dist-vue/**'
+        '**/dist-vue/**',
+        './server.cjs'
       ],
       reportsDirectory: './tests/unit/coverage'
     },

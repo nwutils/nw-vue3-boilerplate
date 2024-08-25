@@ -7,7 +7,7 @@
     "Pinned @vitejs/plugin-vue to 4.5.2 because a bug effecting coverage. vitejs/vite-plugin-vue #368"
   ],
   "name": "your-app-name",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "http://localhost:4175",
   "node-remote": "http://localhost:4175",
   "node-main": "",
@@ -30,10 +30,10 @@
     "build:nw": "build --concurrent --tasks win-x86,linux-x86,linux-x64,mac-x64 --mirror https://dl.nwjs.io/ .",
     "build:win": "npm run build:win:clean && npm run build:vue && build --tasks win-x86 --mirror https://dl.nwjs.io/ .",
     "build:lin": "npm run build:lin:clean && npm run build:vue && build --tasks linux-x64 --mirror https://dl.nwjs.io/ .",
-    "build:win:clean": "rimraf ./dist-vue ./dist/your-app-name-1.0.4-win-x86 ./dist/your-app-name-1.0.4-win-x86.zip ./dist/your-app-name-1.0.4-win-x86.7z ./dist/your-app-name-1.0.4-win-x86-Setup.exe",
-    "build:lin:clean": "rimraf ./dist-vue ./dist/your-app-name-1.0.4-linux-x64 ./dist/your-app-name-1.0.4-linux-x64.zip",
-    "run:win": "dist\\your-app-name-1.0.4-win-x86\\your-app-name.exe",
-    "run:lin": "./dist/your-app-name-1.0.4-linux-x64/your-app-name",
+    "build:win:clean": "rimraf ./dist-vue ./dist/your-app-name-1.0.5-win-x86 ./dist/your-app-name-1.0.5-win-x86.zip ./dist/your-app-name-1.0.5-win-x86.7z ./dist/your-app-name-1.0.5-win-x86-Setup.exe",
+    "build:lin:clean": "rimraf ./dist-vue ./dist/your-app-name-1.0.5-linux-x64 ./dist/your-app-name-1.0.5-linux-x64.zip",
+    "run:win": "dist\\your-app-name-1.0.5-win-x86\\your-app-name.exe",
+    "run:lin": "./dist/your-app-name-1.0.5-linux-x64/your-app-name",
     "regression": "rd /s /q node_modules & rd /s /q node_modules & rd /s /q node_modules & npm install && npm run lint && npm test && npm run build:win && npm run run:win",
     "lint": "eslint --ext .js,.vue --config=.eslintrc.cjs src vite.config.js .eslintrc.cjs",
     "fix": "eslint --fix --ext .js,.vue --config=.eslintrc.cjs src vite.config.js .eslintrc.cjs",
@@ -57,7 +57,7 @@
     "eslint-config-tjw-vue": "^3.0.0",
     "eslint-import-resolver-webpack": "^0.13.8",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jest": "^27.9.0",
+    "eslint-plugin-jest": "^28.8.0",
     "eslint-plugin-vue": "^9.27.0",
     "eslint-plugin-vuejs-accessibility": "^2.4.1",
     "happy-dom": "^15.0.0",
@@ -72,11 +72,11 @@
     "vue": "^3.4.38",
     "vue-options-api-constants-plugin": "^1.0.1",
     "vue-router": "^4.4.3",
-    "wait-on": "^7.2.0"
+    "wait-on": "^8.0.0"
   },
   "chromium-args": "--enable-spell-checking --load-extension='./node_modules/nw-vue-devtools-5/extension' --disable-features=ProcessPerSiteUpToMainFrameThreshold",
   "build": {
-    "nwVersion": "v0.82.0",
+    "nwVersion": "v0.91.0",
     "nwFlavor": "normal",
     "targets": [
       "zip",
@@ -142,6 +142,6 @@
   },
   "type": "module",
   "volta": {
-    "node": "22.7.0"
+    "node": "22.2.0"
   }
 }
