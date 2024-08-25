@@ -1,4 +1,5 @@
 import testHelpers from '@@/unit/testHelpers.js';
+
 import HelloWorld from '@/views/HelloWorld.vue';
 
 describe('HelloWorld.vue', () => {
@@ -10,7 +11,9 @@ describe('HelloWorld.vue', () => {
   describe('Desktop', () => {
     test('Render default contents', async () => {
       const wrapper = await setupWrapper();
-      expect(wrapper.html()).toMatchSnapshot();
+
+      expect(wrapper)
+        .toMatchSnapshot();
     });
 
     test('App name and message displays correctly', async () => {
@@ -51,7 +54,8 @@ describe('HelloWorld.vue', () => {
 
     test('Render default contents', async () => {
       const wrapper = await setupWrapper();
-      expect(wrapper.html())
+
+      expect(wrapper)
         .toMatchSnapshot();
     });
 
