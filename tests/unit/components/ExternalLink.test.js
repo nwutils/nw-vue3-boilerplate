@@ -7,6 +7,11 @@ describe('ExternalLink.vue', () => {
   const url = 'example.com';
   const fullUrl = 'https://' + url;
 
+  beforeEach(() => {
+    global.vueSnapshots.formatting.attributesPerLine = 2;
+    global.vueSnapshots.formatting.tagsWithWhitespacePreserved = true;
+  });
+
   const setupWrapper = async () => {
     const requiredProps = { name, url };
     const options = {

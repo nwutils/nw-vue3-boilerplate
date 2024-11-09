@@ -1,7 +1,3 @@
-import vueSnapshotSerializer from './serializer.js';
-
-expect.addSnapshotSerializer(vueSnapshotSerializer);
-
 global.document = global.window.document;
 document.body.innerHTML = '<div id="app"></div>';
 const { getComputedStyle } = window;
@@ -28,6 +24,11 @@ window.webSetup = function () {
 };
 
 global.beforeEach(() => {
+  global.vueSnapshots = {
+    formatting: {
+      tagsWithWhitespacePreserved: ['pre']
+    }
+  };
   const showDevTools = vi.fn();
   window.nw = {
     process: {

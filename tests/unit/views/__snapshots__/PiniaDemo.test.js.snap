@@ -2,16 +2,26 @@
 
 exports[`PiniaDemo.vue > Desktop > Click increment 1`] = `
 <div class="container mb-2">
-  <h2 class="green">🍍 Pinia Example:</h2>
+  <h2 class="green">
+    🍍 Pinia Example:
+  </h2>
   <ul>
     <li>
-      <strong>Count:</strong> 3
+      <strong>
+        Count:
+      </strong>
+      3
     </li>
     <li>
-      <strong>Doubled Count:</strong> 6
+      <strong>
+        Doubled Count:
+      </strong>
+      6
     </li>
     <li>
-      <button> Increment Count </button>
+      <button>
+        Increment Count
+      </button>
     </li>
   </ul>
 </div>
@@ -19,16 +29,26 @@ exports[`PiniaDemo.vue > Desktop > Click increment 1`] = `
 
 exports[`PiniaDemo.vue > Desktop > Render default contents 1`] = `
 <div class="container mb-2">
-  <h2 class="green">🍍 Pinia Example:</h2>
+  <h2 class="green">
+    🍍 Pinia Example:
+  </h2>
   <ul>
     <li>
-      <strong>Count:</strong> 2
+      <strong>
+        Count:
+      </strong>
+      2
     </li>
     <li>
-      <strong>Doubled Count:</strong> 4
+      <strong>
+        Doubled Count:
+      </strong>
+      4
     </li>
     <li>
-      <button> Increment Count </button>
+      <button>
+        Increment Count
+      </button>
     </li>
   </ul>
 </div>
@@ -36,16 +56,26 @@ exports[`PiniaDemo.vue > Desktop > Render default contents 1`] = `
 
 exports[`PiniaDemo.vue > Web > Click increment 1`] = `
 <div class="container mb-2">
-  <h2 class="green">🍍 Pinia Example:</h2>
+  <h2 class="green">
+    🍍 Pinia Example:
+  </h2>
   <ul>
     <li>
-      <strong>Count:</strong> 3
+      <strong>
+        Count:
+      </strong>
+      3
     </li>
     <li>
-      <strong>Doubled Count:</strong> 6
+      <strong>
+        Doubled Count:
+      </strong>
+      6
     </li>
     <li>
-      <button> Increment Count </button>
+      <button>
+        Increment Count
+      </button>
     </li>
   </ul>
 </div>
@@ -53,16 +83,26 @@ exports[`PiniaDemo.vue > Web > Click increment 1`] = `
 
 exports[`PiniaDemo.vue > Web > Render default contents 1`] = `
 <div class="container mb-2">
-  <h2 class="green">🍍 Pinia Example:</h2>
+  <h2 class="green">
+    🍍 Pinia Example:
+  </h2>
   <ul>
     <li>
-      <strong>Count:</strong> 2
+      <strong>
+        Count:
+      </strong>
+      2
     </li>
     <li>
-      <strong>Doubled Count:</strong> 4
+      <strong>
+        Doubled Count:
+      </strong>
+      4
     </li>
     <li>
-      <button> Increment Count </button>
+      <button>
+        Increment Count
+      </button>
     </li>
   </ul>
 </div>

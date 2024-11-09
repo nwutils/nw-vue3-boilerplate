@@ -33,6 +33,9 @@ export default defineConfig({
     root: '.',
     setupFiles: [
       './tests/unit/setup.js'
+    ],
+    snapshotSerializers: [
+      './node_modules/vue3-snapshot-serializer/index.js'
     ]
   }
 });
