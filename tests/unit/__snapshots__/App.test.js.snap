@@ -3,36 +3,133 @@
 exports[`App.vue > Desktop > Render default contents 1`] = `
 <header>
   <nav>
-    <a class href="#/"> Welcome </a>
-    <a class href="#/fs"> File System Demo </a>
-    <a class href="#/pinia"> Pinia Demo </a>
-    <a class href="#/resources"> Resources </a>
+    <a
+      class=""
+      href="#/"
+    >
+      Welcome
+    </a>
+    <a
+      class=""
+      href="#/fs"
+    >
+      File System Demo
+    </a>
+    <a
+      class=""
+      href="#/pinia"
+    >
+      Pinia Demo
+    </a>
+    <a
+      class=""
+      href="#/resources"
+    >
+      Resources
+    </a>
   </nav>
 </header>
 <main>
-  <!---->
+  <!--  -->
 </main>
 `;
 
 exports[`App.vue > Web > Render default contents 1`] = `
 <header>
   <nav>
-    <a aria-current="page" class="router-link-active router-link-exact-active" href="#/"> Welcome </a>
-    <!--v-if-->
-    <a class href="#/pinia"> Pinia Demo </a>
-    <a class href="#/resources"> Resources </a>
+    <a
+      aria-current="page"
+      class="router-link-active router-link-exact-active"
+      href="#/"
+    >
+      Welcome
+    </a>
+    <!-- v-if -->
+    <a
+      class=""
+      href="#/pinia"
+    >
+      Pinia Demo
+    </a>
+    <a
+      class=""
+      href="#/resources"
+    >
+      Resources
+    </a>
   </nav>
 </header>
 <main>
   <div class="greetings">
     <div class="logos">
-      <!--v-if-->
-      <img alt="Vue logo" src="/src/assets/logo.svg">
+      <!-- v-if -->
+      <img
+        alt="Vue logo"
+        src="/src/assets/logo.svg"
+      />
     </div>
-    <h1 class="green">Your App Name Here</h1>
-    <h2 class="green">Vue Boilerplate</h2>
-    <h3> This boilerplate uses <a href="#" title="nwjs.io">NW.js</a> + <a href="#" title="vitejs.dev">Vite</a> + <a href="#" title="vuejs.org">Vue 3</a> + <a href="#" title="pinia.vuejs.org">Pinia</a> + <a href="#" title="router.vuejs.org">Vue-Router</a> + the <a href="#" title="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing">superior Options API</a>. </h3>
-    <p> Notice that the <strong>same app conditionally renders</strong> different content in a normal browser than <strong>when ran as a desktop app</strong>. </p>
+    <h1 class="green">
+      Your App Name Here
+    </h1>
+    <h2 class="green">
+      Vue Boilerplate
+    </h2>
+    <h3>
+      This boilerplate uses
+      <a
+        href="#"
+        title="nwjs.io"
+      >
+        NW.js
+      </a>
+      +
+      <a
+        href="#"
+        title="vitejs.dev"
+      >
+        Vite
+      </a>
+      +
+      <a
+        href="#"
+        title="vuejs.org"
+      >
+        Vue 3
+      </a>
+      +
+      <a
+        href="#"
+        title="pinia.vuejs.org"
+      >
+        Pinia
+      </a>
+      +
+      <a
+        href="#"
+        title="router.vuejs.org"
+      >
+        Vue-Router
+      </a>
+      + the
+      <a
+        href="#"
+        title="docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing"
+      >
+        superior Options API
+      </a>
+      .
+    </h3>
+    <p>
+      Notice that the
+      <strong>
+        same app conditionally renders
+      </strong>
+      different content in a normal browser than
+      <strong>
+        when ran as a desktop app
+      </strong>
+      .
+    </p>
   </div>
 </main>
 `;

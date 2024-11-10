@@ -62,7 +62,6 @@
     "eslint-plugin-vue": "^9.30.0",
     "eslint-plugin-vuejs-accessibility": "^2.4.1",
     "happy-dom": "^15.11.0",
-    "jest-serializer-vue-tjw": "^3.20.0",
     "nw": "0.93.0-sdk",
     "nw-vue-devtools-5": "^5.0.0",
     "nwjs-builder-phoenix": "^1.15.0",
@@ -73,6 +72,7 @@
     "vue": "^3.4.38",
     "vue-options-api-constants-plugin": "^1.0.1",
     "vue-router": "^4.4.5",
+    "vue3-snapshot-serializer": "^0.8.0",
     "wait-on": "^8.0.1"
   },
   "chromium-args": "--enable-spell-checking --load-extension='./node_modules/nw-vue-devtools-5/extension' --disable-features=ProcessPerSiteUpToMainFrameThreshold",
