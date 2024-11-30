@@ -9,7 +9,7 @@ describe('ExternalLink.vue', () => {
 
   beforeEach(() => {
     global.vueSnapshots.formatting.attributesPerLine = 2;
-    global.vueSnapshots.formatting.tagsWithWhitespacePreserved = true;
+    global.vueSnapshots.formatting.tagsWithWhitespacePreserved = ['a'];
   });
 
   const setupWrapper = async () => {
