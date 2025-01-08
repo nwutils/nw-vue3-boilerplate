@@ -36,7 +36,7 @@ Run `npm run build` and you're ready to ship/deploy: Web App, Windows Installer,
 * **Vitest** - Vite-based Unit/integration/behavioral testing
   * 100% test coverage examples
   * @vue/test-utils - Test helpers for interacting with Vue in tests
-  * jest-serializer-vue-tjw - Dramatically improved snapshot formatting
+  * vue3-snapshot-serializer - Dramatically improved snapshot formatting
   * @pinia/testing - Initialize Pinia in tests
 
 
