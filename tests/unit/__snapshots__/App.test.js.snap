@@ -39,7 +39,10 @@ exports[`App.vue > Web > Render default contents 1`] = `
   <nav>
     <a
       aria-current="page"
-      class="router-link-active router-link-exact-active"
+      class="
+        router-link-active
+        router-link-exact-active
+      "
       href="#/"
     >
       Welcome

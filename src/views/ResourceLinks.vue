@@ -22,7 +22,7 @@
         <li>
           <ExternalLink name="Vitest" url="vitest.dev" /> +
           <ExternalLink name="Vue Test-Utils" url="test-utils.vuejs.org" /> +
-          <ExternalLink name="jest-serializer-vue-tjw" url="github.com/tjw-lint/jest-serializer-vue-tjw" />
+          <ExternalLink name="Vue Snapshot Serializer" url="TheJaredWilcurt.com/vue-snapshot-serializer" />
         </li>
       </ul>
     </template>
