@@ -51,7 +51,10 @@ exports[`HelloWorld.vue > Desktop > Render default contents 1`] = `
     ></external-link-stub>
     .
   </h3>
-  <div class="center mt-1">
+  <div class="
+    center
+    mt-1
+  ">
     <p class="container">
       <button>
         Open Vue-DevTools
