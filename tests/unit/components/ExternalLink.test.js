@@ -3,8 +3,11 @@ import testHelpers from '@@/unit/testHelpers.js';
 import ExternalLink from '@/components/ExternalLink.vue';
 
 describe('ExternalLink.vue', () => {
+  // Props
   const name = 'Test';
   const url = 'example.com';
+
+  // Data
   const fullUrl = 'https://' + url;
 
   beforeEach(() => {
@@ -26,7 +29,9 @@ describe('ExternalLink.vue', () => {
       const wrapper = await setupWrapper();
 
       expect(wrapper)
-        .toMatchSnapshot();
+        .toMatchInlineSnapshot(`
+          <a href="#" title="example.com">Test</a>
+        `);
     });
 
     test('Click event', async () => {
@@ -46,15 +51,18 @@ describe('ExternalLink.vue', () => {
 
     test('Render default contents', async () => {
       const wrapper = await setupWrapper();
+      vi.runAllTimers();
 
       expect(wrapper)
-        .toMatchSnapshot();
+        .toMatchInlineSnapshot(`
+          <a href="#" title="example.com">Test</a>
+        `);
     });
 
     test('Click event', async () => {
       const wrapper = await setupWrapper();
 
-      await wrapper.find('a').trigger('click');
+      await wrapper.find('[data-test="link"]').trigger('click');
 
       expect(window.open)
         .toHaveBeenCalledWith(fullUrl, '_blank');
