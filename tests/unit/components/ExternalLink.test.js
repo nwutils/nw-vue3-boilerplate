@@ -37,7 +37,7 @@ describe('ExternalLink.vue', () => {
     test('Click event', async () => {
       const wrapper = await setupWrapper();
 
-      await wrapper.find('a').trigger('click');
+      await wrapper.find('[data-test="link"]').trigger('click');
 
       expect(window.nw.Shell.openExternal)
         .toHaveBeenCalledWith(fullUrl);
