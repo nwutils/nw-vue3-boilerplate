@@ -1,6 +1,7 @@
 <template>
   <a
     v-text="name"
+    data-test="link"
     href="#"
     :title="url"
     @click.prevent="open('https://' + url)"
