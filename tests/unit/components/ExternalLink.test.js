@@ -51,7 +51,6 @@ describe('ExternalLink.vue', () => {
 
     test('Render default contents', async () => {
       const wrapper = await setupWrapper();
-      vi.runAllTimers();
 
       expect(wrapper)
         .toMatchInlineSnapshot(`
