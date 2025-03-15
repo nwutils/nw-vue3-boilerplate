@@ -21,7 +21,7 @@ Run `npm run build` and you're ready to ship/deploy: Web App, Windows Installer,
 * **NW.js** - Desktop App runtime environment
   * Chromium 132
   * Node.js 23.3.0
-* **Vue-DevTools** - Built in to the Chromium dev tools
+* **Vue-DevTools** - Official Vite plugin
 * **Vite** - Dev Server/Bundler/App build tool
 * **Pinia** - Global State Management
 * **Vue-Router** - Frontend routing/navigation

@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
+import vueDevTools from 'vite-plugin-vue-devtools';
 import { configDefaults } from 'vitest/dist/config.js';
 
 // https://vitejs.dev/config/
@@ -12,7 +13,10 @@ export default defineConfig({
     target: 'chrome132',
     outDir: 'dist-vue'
   },
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    vueDevTools()
+  ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

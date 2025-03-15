@@ -66,6 +66,7 @@
     "pinia": "^3.0.1",
     "rimraf": "^6.0.1",
     "vite": "^6.1.0",
+    "vite-plugin-vue-devtools": "^7.7.2",
     "vitest": "^3.0.5",
     "vue": "^3.5.13",
     "vue-options-api-constants-plugin": "^1.0.3",
