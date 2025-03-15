@@ -124,11 +124,6 @@ I set up Pinia in this project to save you time (and because it's amazing). If y
 * `git add -A && git commit -m "Removed Pinia"`
 
 
-## Updating Vue-DevTools
-
-At time of writing, Vue-DevTools v6 has just been released. It is a major re-write and there are many reports of it being buggy. So for now I've changed the repo to use a pinned version of the last V5 release. If you are reading this in the future, you can try changing `nw-vue-devtools-5` to `nw-vue-devtools-prebuilt`. The "prebuilt" dependency will download the latest Vue-DevTools from the Chromium Web Store and then patch it to work in NW.js. Make sure to update all references from `nw-vue-devtools-5` to `nw-vue-devtools-prebuilt` in the `package.json`. There is also a `npm run update:vue-devtools` script that will delete it and re-download latest from the web store if you are using the prebuilt version.
-
-
 ## Alternatives
 
 * [Vue 3 Desktop and Mobile](https://github.com/rigor789/nw-vue3-boilerplate) - Fork of this repo but with NativeScript added to also build for Android and iOS.

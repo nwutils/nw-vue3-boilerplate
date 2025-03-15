@@ -38,8 +38,7 @@
     "regression:lin": "rm -r -f node_modules && npm install && npm run lint && npm test && npm run build:lin && npm run run:lin",
     "lint": "eslint --ext .js,.vue --config=.eslintrc.cjs src vite.config.js .eslintrc.cjs",
     "fix": "eslint --fix --ext .js,.vue --config=.eslintrc.cjs src vite.config.js .eslintrc.cjs",
-    "test": "vitest run --coverage",
-    "update:vue-devtools": "rimraf ./node_modules/your-app-name-devtools-5 && npm install"
+    "test": "vitest run --coverage"
   },
   "dependencies": {
     "express": "^4.21.1"
@@ -63,7 +62,6 @@
     "eslint-plugin-vuejs-accessibility": "^2.4.1",
     "happy-dom": "^17.1.0",
     "nw": "0.95.0-sdk",
-    "nw-vue-devtools-5": "^5.0.0",
     "nwjs-builder-phoenix": "^1.15.0",
     "pinia": "^3.0.1",
     "rimraf": "^6.0.1",
@@ -75,7 +73,7 @@
     "vue3-snapshot-serializer": "^2.6.0",
     "wait-on": "^8.0.2"
   },
-  "chromium-args": "--enable-spell-checking --load-extension='./node_modules/nw-vue-devtools-5/extension' --disable-features=ProcessPerSiteUpToMainFrameThreshold",
+  "chromium-args": "--enable-spell-checking --disable-features=ProcessPerSiteUpToMainFrameThreshold",
   "build": {
     "nwVersion": "v0.95.0",
     "nwFlavor": "normal",
