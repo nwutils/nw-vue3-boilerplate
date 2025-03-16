@@ -21,7 +21,7 @@ Run `npm run build` and you're ready to ship/deploy: Web App, Windows Installer,
 * **NW.js** - Desktop App runtime environment
   * Chromium 132
   * Node.js 23.3.0
-* **Vue-DevTools** - Built in to the Chromium dev tools
+* **Vue-DevTools** - Official Vite plugin
 * **Vite** - Dev Server/Bundler/App build tool
 * **Pinia** - Global State Management
 * **Vue-Router** - Frontend routing/navigation
@@ -122,11 +122,6 @@ I set up Pinia in this project to save you time (and because it's amazing). If y
 * Remove the lines of code from `/package.json` that say "pinia"
 * `npm install && npm t -- -u`
 * `git add -A && git commit -m "Removed Pinia"`
-
-
-## Updating Vue-DevTools
-
-At time of writing, Vue-DevTools v6 has just been released. It is a major re-write and there are many reports of it being buggy. So for now I've changed the repo to use a pinned version of the last V5 release. If you are reading this in the future, you can try changing `nw-vue-devtools-5` to `nw-vue-devtools-prebuilt`. The "prebuilt" dependency will download the latest Vue-DevTools from the Chromium Web Store and then patch it to work in NW.js. Make sure to update all references from `nw-vue-devtools-5` to `nw-vue-devtools-prebuilt` in the `package.json`. There is also a `npm run update:vue-devtools` script that will delete it and re-download latest from the web store if you are using the prebuilt version.
 
 
 ## Alternatives
