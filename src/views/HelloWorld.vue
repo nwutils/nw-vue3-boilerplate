@@ -29,7 +29,7 @@
           data-test="devToolsButton"
           @click="nw.Window.get().showDevTools()"
         >
-          Open Vue-DevTools
+          Open DevTools
         </button>
       </p>
       <p class="container">
