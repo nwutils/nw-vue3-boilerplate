@@ -1,6 +1,6 @@
-import testHelpers from '@@/unit/testHelpers.js';
-
 import HelloWorld from '@/views/HelloWorld.vue';
+
+import testHelpers from '@@/unit/testHelpers.js';
 
 describe('HelloWorld.vue', () => {
   const setupWrapper = async () => {

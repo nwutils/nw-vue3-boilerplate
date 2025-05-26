@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules,import/no-extraneous-dependencies */
 import { fileURLToPath, URL } from 'node:url';
 
 import vue from '@vitejs/plugin-vue';
@@ -10,7 +9,7 @@ import { configDefaults } from 'vitest/dist/config.js';
 export default defineConfig({
   build: {
     // Make sure this matches the Chromium version built into NW.js
-    target: 'chrome132',
+    target: 'chrome137',
     outDir: 'dist-vue'
   },
   plugins: [

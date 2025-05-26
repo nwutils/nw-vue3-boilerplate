@@ -1,6 +1,6 @@
-import testHelpers from '@@/unit/testHelpers.js';
-
 import App from '@/App.vue';
+
+import testHelpers from '@@/unit/testHelpers.js';
 
 describe('App.vue', () => {
   const setupWrapper = function () {
