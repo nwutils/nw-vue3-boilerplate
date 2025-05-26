@@ -1,6 +1,6 @@
-import testHelpers from '@@/unit/testHelpers.js';
-
 import ExternalLink from '@/components/ExternalLink.vue';
+
+import testHelpers from '@@/unit/testHelpers.js';
 
 describe('ExternalLink.vue', () => {
   // Props

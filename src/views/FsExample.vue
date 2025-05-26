@@ -50,7 +50,7 @@ export default {
         try {
           this.contents = fs.readdirSync('.');
           this.error = false;
-        } catch (err) {
+        } catch {
           this.contents = [];
           this.error = true;
         }

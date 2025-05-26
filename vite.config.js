@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules,import/no-extraneous-dependencies */
 import { fileURLToPath, URL } from 'node:url';
 
 import vue from '@vitejs/plugin-vue';
