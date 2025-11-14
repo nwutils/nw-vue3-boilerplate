@@ -45,7 +45,7 @@
       <ul>
         <li><ExternalLink name="Vue Discord Chat" url="chat.vuejs.org" /></li>
         <li><ExternalLink name="NW.js Discord Chat" url="discord.gg/tyx267vKRH" /></li>
-        <li><ExternalLink name="NW.js Gitter Chat" url="discord.gg/tyx267vKRH" /></li>
+        <li><ExternalLink name="NW.js Gitter Chat" url="gitter.im/nwjs/nw.js" /></li>
       </ul>
     </template>
   </ResourceGroup>

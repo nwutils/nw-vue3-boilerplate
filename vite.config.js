@@ -3,18 +3,20 @@ import { fileURLToPath, URL } from 'node:url';
 import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
 import vueDevTools from 'vite-plugin-vue-devtools';
-import { configDefaults } from 'vitest/dist/config.js';
+import vueDevToolsAccessibility from 'vue-dev-tools-accessibility';
+import { configDefaults } from 'vitest/config';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
     // Make sure this matches the Chromium version built into NW.js
-    target: 'chrome137',
+    target: 'chrome142',
     outDir: 'dist-vue'
   },
   plugins: [
     vue(),
-    vueDevTools()
+    vueDevTools(),
+    vueDevToolsAccessibility()
   ],
   resolve: {
     alias: {
@@ -29,6 +31,7 @@ export default defineConfig({
       exclude: [
         ...(configDefaults?.coverage?.exclude || []),
         '**/dist-vue/**',
+        './src/assets/',
         './server.cjs'
       ],
       reportsDirectory: './tests/unit/coverage'
