@@ -7,7 +7,7 @@
     "Unit tests inaccurately report 1 line of code not being covered because this bug: vitejs/vite-plugin-vue #368"
   ],
   "name": "your-app-name",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "main": "http://localhost:4175",
   "node-remote": "http://localhost:4175",
   "node-main": "",
@@ -27,16 +27,10 @@
     "build": "npm run build:clean && npm run build:vue && npm run build:nw",
     "build:clean": "rimraf ./dist-vue ./dist",
     "build:vue": "vite build",
-    "build:nw": "build --concurrent --tasks win-x86,linux-x86,linux-x64,mac-x64 --mirror https://dl.nwjs.io/ .",
-    "build:win": "npm run build:win:clean && npm run build:vue && build --tasks win-x86 --mirror https://dl.nwjs.io/ .",
-    "build:lin": "npm run build:lin:clean && npm run build:vue && build --tasks linux-x64 --mirror https://dl.nwjs.io/ .",
-    "build:win:clean": "rimraf ./dist-vue ./dist/your-app-name-1.2.0-win-x86 ./dist/your-app-name-1.2.0-win-x86.zip ./dist/your-app-name-1.2.0-win-x86.7z ./dist/your-app-name-1.2.0-win-x86-Setup.exe",
-    "build:lin:clean": "rimraf ./dist-vue ./dist/your-app-name-1.2.0-linux-x64 ./dist/your-app-name-1.2.0-linux-x64.zip",
-    "run:win": "dist\\your-app-name-1.2.0-win-x86\\your-app-name.exe",
-    "run:lin": "./dist/your-app-name-1.2.0-linux-x64/your-app-name",
-    "regression": "rd /s /q node_modules & rd /s /q node_modules & rd /s /q node_modules & npm install && npm run lint && npm test && npm run build:win && npm run run:win",
-    "regression:lin": "rm -r -f node_modules && npm install && npm run lint && npm test && npm run build:lin && npm run run:lin",
-    "lint": "eslint --ext .js,.vue src tests",
+    "build:nw": "node ./scripts/build.js",
+    "build:run": "./dist/your-app-name-2.0.0/your-app-name",
+    "regression": "rm -r -f node_modules && npm install && npm run lint && npm test && npm run build && npm run build:run",
+    "lint": "eslint --ext .js,.vue src tests scripts",
     "fix": "npm run lint -- --fix",
     "test": "vitest run --coverage"
   },
@@ -48,7 +42,7 @@
     "@pinia/testing": "^1.0.3",
     "@stylistic/eslint-plugin": "^5.5.0",
     "@vitejs/plugin-vue": "^6.0.1",
-    "@vitest/coverage-v8": "^4.0.8",
+    "@vitest/coverage-v8": "^4.0.9",
     "@vue/test-utils": "^2.4.6",
     "concurrently": "^9.2.1",
     "eslint": "^9.39.1",
@@ -64,12 +58,13 @@
     "globals": "^16.5.0",
     "happy-dom": "^20.0.10",
     "nw": "0.105.0-sdk",
+    "nw-builder": "^4.16.0",
     "nwjs-builder-phoenix": "^1.15.0",
     "pinia": "^3.0.4",
     "rimraf": "^6.1.0",
     "vite": "^7.2.2",
     "vite-plugin-vue-devtools": "^8.0.3",
-    "vitest": "^4.0.8",
+    "vitest": "^4.0.9",
     "vue": "^3.5.24",
     "vue-dev-tools-accessibility": "^0.5.1",
     "vue-options-api-constants-plugin": "^1.0.3",
@@ -78,71 +73,6 @@
     "wait-on": "^9.0.3"
   },
   "chromium-args": "--enable-spell-checking --disable-features=ProcessPerSiteUpToMainFrameThreshold",
-  "build": {
-    "nwVersion": "v0.105.0",
-    "nwFlavor": "normal",
-    "targets": [
-      "zip",
-      "nsis7z"
-    ],
-    "files": [
-      "**/*"
-    ],
-    "excludes": [
-      "src/**/*",
-      "tests/**/*",
-      "public/**/*",
-      "dist-vue/**/*.js.map",
-      "dist-vue/**/*.css.map",
-      "dist-vue/**/*-legacy*",
-      ".editorconfig",
-      ".eslintignore",
-      ".eslintrc",
-      ".gitignore",
-      "CODE_OF_CONDUCT.md",
-      "index.html",
-      "jsconfig.json",
-      "package-lock.json",
-      "screenshot.png",
-      "vite.config.js",
-      "waitOnConfig.json"
-    ],
-    "strippedProperties": [
-      "ManifestComments",
-      "scripts",
-      "devDependencies",
-      "build",
-      "volta"
-    ],
-    "overriddenProperties": {
-      "main": "http://localhost:4185",
-      "node-remote": "http://localhost:4185",
-      "node-main": "server.cjs",
-      "chromium-args": "--enable-spell-checking",
-      "window": {
-        "width": 960,
-        "height": 600,
-        "min_width": 700,
-        "min_height": 500,
-        "icon": "dist-vue/icon.png"
-      }
-    },
-    "win": {
-      "icon": "public/icon-256.ico"
-    },
-    "mac": {
-      "icon": "public/icon.icns"
-    },
-    "nsis": {
-      "icon": "public/icon-256.ico",
-      "unIcon": "public/icon.ico",
-      "languages": [
-        "English"
-      ],
-      "diffUpdaters": false,
-      "hashCalculation": true
-    }
-  },
   "type": "module",
   "volta": {
     "node": "24.9.0"

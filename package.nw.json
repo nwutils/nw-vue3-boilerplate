@@ -1,0 +1,18 @@
+{
+  "name": "your-app-name",
+  "version": "1.2.0",
+  "main": "http://localhost:4185",
+  "node-remote": "http://localhost:4185",
+  "node-main": "server.cjs",
+  "window": {
+    "width": 960,
+    "height": 600,
+    "min_width": 800,
+    "min_height": 500,
+    "icon": "public/icon.png"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "chromium-args": "--enable-spell-checking --disable-features=ProcessPerSiteUpToMainFrameThreshold"
+}
