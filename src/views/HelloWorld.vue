@@ -63,6 +63,7 @@ export default {
   },
   methods: {
     openAppInBrowser: function () {
+      /* v8 ignore else */
       if (this.isDesktop) {
         this.nw.Shell.openExternal(window.location.href);
       }
