@@ -85,7 +85,7 @@ Or even directly from the template (with some slight changes to work within the 
 
 ## Lint
 
-Uses rules in `./eslint.json`
+Uses rules in `./eslint.config.js`
 
 1. `npm run lint` to see linting errors
 1. `npm run fix` to auto-fix linting errors (where possible)
