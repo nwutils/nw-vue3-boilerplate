@@ -10,7 +10,7 @@ import { configDefaults } from 'vitest/config';
 export default defineConfig({
   build: {
     // Make sure this matches the Chromium version built into NW.js
-    target: 'chrome142',
+    target: 'chrome154',
     outDir: 'dist-vue'
   },
   plugins: [
