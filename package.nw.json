@@ -1,6 +1,6 @@
 {
   "name": "your-app-name",
-  "version": "1.2.0",
+  "version": "2.1.0",
   "main": "http://localhost:4185",
   "node-remote": "http://localhost:4185",
   "node-main": "server.cjs",
@@ -12,7 +12,7 @@
     "icon": "public/icon.png"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.3.0"
   },
   "chromium-args": "--enable-spell-checking --disable-features=ProcessPerSiteUpToMainFrameThreshold"
 }
