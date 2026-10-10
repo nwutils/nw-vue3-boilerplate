@@ -19,8 +19,8 @@ Run `npm run build` and you're ready to ship/deploy: Web App, Windows Installer,
 
 * **Vue 3** - Frontend framework
 * **NW.js** - Desktop App runtime environment
-  * Chromium 142
-  * Node.js 24.9.0
+  * Chromium 154
+  * Node.js 26.7.0
 * **Vue-DevTools** - Official Vite plugin
   * **Vue-Dev-Tools-Accessibility** - Accessibility plugin for Vue-DevTools
 * **Vite** - Dev Server/Bundler/App build tool
@@ -137,7 +137,8 @@ I set up Pinia in this project to save you time (and because it's amazing). If y
 ## Updating to newer NW.js versions
 
 1. When updating the version of NW.js devDependency, also update these:
-   * `package.json` version, devDeps, build nwVersion, volta
+   * `package.json` version, build:run, devDeps, volta
+   * `package.nw.json` version
    * `build.target` in `vite.config.js`
    * Update the Chromium/Node version numbers at the top of the README
 1. Bump the version number, and all the npm scripts that reference the version number
