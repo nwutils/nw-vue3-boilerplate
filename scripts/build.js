@@ -7,7 +7,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-/* eslint-disable-next-line */
 import nwbuild from 'nw-builder';
 
 const __dirname = import.meta.dirname;

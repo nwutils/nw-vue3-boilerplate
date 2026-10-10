@@ -32,7 +32,7 @@ export default defineConfig({
         ...(configDefaults?.coverage?.exclude || []),
         './dist-vue/',
         './scripts/',
-        './src/assets/',
+        './src/assets/*',
         './tests/',
         './server.cjs'
       ],

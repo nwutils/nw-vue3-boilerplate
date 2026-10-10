@@ -2,10 +2,10 @@ import path from 'node:path';
 
 import pluginJs from '@eslint/js';
 import tjwBase from 'eslint-config-tjw-base';
-import tjwImport from 'eslint-config-tjw-import';
+import tjwImport from 'eslint-config-tjw-import-x';
 import tjwJest from 'eslint-config-tjw-jest';
 import tjwVue from 'eslint-config-tjw-vue';
-import pluginImport from 'eslint-plugin-import';
+import pluginImport from 'eslint-plugin-import-x';
 import pluginJest from 'eslint-plugin-jest';
 import pluginVue from 'eslint-plugin-vue';
 import pluginVueA11y from 'eslint-plugin-vuejs-accessibility';
@@ -25,16 +25,16 @@ export default [
   tjwJest.configs.recommended,
   tjwVue,
   {
-    // project specific rules/settings
     languageOptions: {
+      ecmaVersion: 2026,
       globals: {
         vi: true
       }
     },
+    // project specific rules/settings
     rules: {
-      'import/no-unused-modules': 'off',
-      'import/no-extraneous-dependencies': 'off',
-
+      'import-x/no-extraneous-dependencies': 'off',
+      'import-x/no-unresolved': 'off',
       // If this is not turned off, linting throws because it can't find 'jest' install
       'jest/no-deprecated-functions': 'off',
       'vuejs-accessibility/label-has-for': [
@@ -49,7 +49,7 @@ export default [
       ]
     },
     settings: {
-      'import/resolver': {
+      'import-x/resolver': {
         vite: {
           viteConfig: {
             resolve: {
